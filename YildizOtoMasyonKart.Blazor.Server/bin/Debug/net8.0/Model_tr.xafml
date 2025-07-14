@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Yildiz OtoMasyon" Company="ZekiKod" Description="zekikod.com 05542626752">
+  <BOModel>
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.GirisCikislar">
+      <OwnMembers>
+        <Member Name="Tarih" EditMask="f" DisplayFormat="{0:f}" />
+      </OwnMembers>
+    </Class>
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.KartOdeme">
+      <OwnMembers>
+        <Member Name="Tarih" DisplayFormat="{0:f}" EditMask="f" />
+      </OwnMembers>
+    </Class>
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.SatilanUrunler">
+      <OwnMembers>
+        <Member Name="Tarih" DisplayFormat="{0:f}" EditMask="f" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Views>
+    <ListView Id="KartOdeme_ListView">
+      <Columns>
+        <ColumnInfo Id="Tarih" DisplayFormat="{0:dd.MM.yyyy HH:mm}" EditMask="d" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

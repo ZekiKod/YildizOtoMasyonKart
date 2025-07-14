@@ -1,0 +1,24 @@
+﻿.xaf-dashboard-container {
+    width: 100%;
+    height: 800px;
+}
+
+.xaf-dashboard-container.xaf-dashboard-fullscreen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh !important;
+    z-index: 5000;
+}
+
+.xaf-dashboard-wm-switch-btn.xaf-dashboard-lang-en > span {
+    width: 142px;
+}
+
+.xaf-dashboard-wm-switch-btn.xaf-dashboard-lang-ru > span {
+    width: 141px;
+}
+
+.xaf-dashboard-wm-switch-btn.xaf-dashboard-lang-de > span {
+    width: 167px;
+}

@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "47PheCvaO8hWBkwlXv2+cmqMzu1dNlqt6qPgqNoZcec=",
+  "Source": "WebAccess",
+  "BasePath": "_content/WebAccess",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAccess\\wwwroot",
+      "Source": "WebAccess",
+      "ContentRoot": "C:\\Users\\ZekiKod\\Desktop\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\wwwroot\\",
+      "BasePath": "_content/WebAccess",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

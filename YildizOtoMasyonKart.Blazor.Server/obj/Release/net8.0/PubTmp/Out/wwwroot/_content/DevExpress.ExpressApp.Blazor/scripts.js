@@ -1,0 +1,1 @@
+console.warn("'_content/DevExpress.ExpressApp.Blazor/scripts.js' is no longer required. You can safely remove it from your project.");

@@ -1,0 +1,235 @@
+﻿@page "/sales" // Veya sizin belirlediğiniz sayfa yolu
+
+// --- Temel Blazor ve Sistem Kütüphaneleri ---
+@using Microsoft.AspNetCore.Components.Web
+@using System.Collections.ObjectModel
+@using System.ComponentModel
+
+// --- DevExpress Kütüphaneleri ---
+@using DevExpress.Blazor
+@using DevExpress.Data.Filtering // CriteriaOperator için
+
+// --- XAF Kütüphaneleri ---
+@using DevExpress.ExpressApp
+@using DevExpress.ExpressApp.Blazor.Components.Models // View için (eğer hala gerekliyse)
+@using DevExpress.ExpressApp.Blazor.Services // IXafApplicationProvider için
+@using DevExpress.ExpressApp.Core // IObjectSpaceFactory için
+@using DevExpress.ExpressApp.Data // ObjectSpace vs. için
+
+// --- Projenizin İş Nesneleri (Business Objects) ---
+// ****** BU USING DİREKTİFİNİN DOĞRU NAMESPACE'İ GÖSTERDİĞİNDEN EMİN OLUN ******
+@using YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB
+// *****************************************************************************
+
+// --- Servis Enjeksiyonları ---
+@implements IDisposable
+@inject IJSRuntime JSRuntime
+@inject IXafApplicationProvider ApplicationProvider
+@inject IObjectSpaceFactory ObjectSpaceFactory
+
+<style>
+    /* --- Stiller önceki gibi kalabilir --- */
+    .product-card { margin-bottom: 15px; cursor: pointer; transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out; border: 1px solid #e0e0e0; border-radius: 6px; min-height: 130px; display: flex; flex-direction: column; justify-content: space-between; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .product-card:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .product-card:active { transform: scale(0.98); }
+    .product-card .card-body { padding: 10px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+    .product-card .card-title { font-size: 0.95em; font-weight: 600; margin-bottom: 5px; overflow: hidden; text-overflow: ellipsis; white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; min-height: 2.6em; }
+    .product-card .card-text { font-size: 1.1em; font-weight: bold; color: #1a8a3c; margin-top: auto; }
+    .dxbs-tab.nav-link { padding: 10px 15px; font-size: 1.05em; }
+    #barcodeInput { font-size: 1.2em; padding: 10px 12px; height: auto; }
+    .card-info-section .card { background-color: #f8f9fa; border: none;}
+    .card-info-section .card-body { padding: 15px; }
+    .card-info-section .card-body p { margin-bottom: 8px; font-size: 1.0em; }
+    .cart-container { min-height: 250px; max-height: 50vh; overflow-y: auto; -webkit-overflow-scrolling: touch; border: 1px solid #e0e0e0; border-radius: 5px; padding: 5px 10px; background-color: #fff; margin-bottom: 15px; }
+    .cart-item-row { display: flex; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 1.0em; }
+    .cart-item-row:last-child { border-bottom: none; }
+    .cart-item-name { flex-grow: 1; margin-right: 10px; font-weight: 500; }
+    .cart-item-price { width: 80px; text-align: right; font-weight: bold; }
+    .cart-item-quantity { width: 110px; text-align: center; display: flex; align-items: center; justify-content: center; }
+    .cart-item-quantity .dx-button { min-width: 30px; padding: 4px 6px; }
+    .cart-item-quantity span { margin: 0 8px; font-weight: bold; min-width: 20px; display: inline-block; }
+    .cart-item-actions { width: 50px; text-align: right; }
+    .remove-item-btn.dx-button { padding: 5px 8px; line-height: 1; }
+    .remove-item-btn .dx-icon { font-size: 1.1em; }
+    .total-section { font-size: 1.4em; font-weight: bold; margin-top: 15px; padding: 15px 0; border-top: 2px solid #d0d0d0; text-align: right; }
+    .main-action-button { padding: 12px 20px; font-size: 1.1em; }
+</style>
+
+<div class="container-fluid mt-3 pos-container">
+    <div class="row">
+
+        <!-- Sol Bölüm: Kategoriler ve Ürünler -->
+        <div class="col-lg-7 col-xl-8 order-lg-1 pos-row">
+            <h4>Ürünler</h4>
+            <DxTabs @bind-ActiveTabIndex="ActiveCategoryIndex" ContentClass="mt-3">
+                @if (Categories == null || !Categories.Any())
+                {
+                     <DxTabPage Text="Kategoriler Yükleniyor...">
+                        <p>Lütfen bekleyin...</p>
+                     </DxTabPage>
+                }
+                else
+                {
+                    @foreach (var category in Categories)
+                    {
+                        <DxTabPage Text="@GetCategoryName(category)"> @* İsim UrunKategori'den KategoriAdi ile alınacak *@
+                            <div class="row g-3">
+                                @foreach (var product in GetProductsForCategory(category))
+                                {
+                                    <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3" @key="product.Oid">
+                                        <DxCard CssClass="product-card" @onclick="() => AddItemToCart(product)">
+                                            <BodyTemplate>
+                                                <h5 class="card-title" title="@product.UrunAdi">@product.UrunAdi</h5>
+                                                <p class="card-text">@product.Fiyat.ToString("C2")</p>
+                                            </BodyTemplate>
+                                        </DxCard>
+                                    </div>
+                                }
+                                @if (!GetProductsForCategory(category).Any())
+                                {
+                                    <div class="col-12"><p>Bu kategoride ürün bulunmamaktadır.</p></div>
+                                }
+                            </div>
+                        </DxTabPage>
+                    }
+                }
+            </DxTabs>
+
+             <div class="row mt-4">
+                <div class="col-md-12">
+                    <h5>Barkod Okut / Kart Okut</h5>
+                     <DxTextBox @ref="barcodeInputRef"
+                               @bind-Text="@Barcode"
+                               Placeholder="Barkod veya Kart Numarası okutun..."
+                               @onkeydown="HandleBarcodeKeyDown"
+                               ClearButtonDisplayMode="DataEditorClearButtonDisplayMode.Auto"
+                               InputId="barcodeInput"
+                               style="max-width: 400px;" />
+                 </div>
+            </div>
+        </div>
+
+        <!-- Sağ Bölüm: Sepet ve Kart Bilgileri -->
+        <div class="col-lg-5 col-xl-4 order-lg-2 pos-row">
+            @* Kart Bilgileri Alanı (Değişiklik yok) *@
+            @if (!string.IsNullOrEmpty(KartNo)) { <div class="card-info-section mb-3"> <h4>Kart Bilgileri</h4> <div class="card"> <div class="card-body"> <p><strong>Kart No:</strong> @KartNo</p> <p><strong>Kullanıcı:</strong> @UserName</p> <p><strong>Bakiye:</strong> <span class="@(CardBalance >= TotalPrice ? "text-success" : "text-danger") fw-bold">@CardBalance.ToString("C2")</span></p> <DxButton Click="async () => await ClearCardInfo()" Text="Kartı Değiştir/Çıkar" SizeMode="SizeMode.Small" CssClass="mt-2" RenderStyle="ButtonRenderStyle.Warning"/> </div> </div> </div> } else { <div class="card-info-section mb-3"> <h4>Kart Bilgileri</h4> <div class="card"> <div class="card-body text-muted"> Kart okutulmadı. </div> </div> </div> }
+
+            <h4>Sepet</h4>
+            <div class="cart-container">
+                @if (!CartItems.Any()) { <p class="text-muted text-center" style="line-height: 180px;">Sepetiniz boş.</p> } else {
+                    @foreach (var item in CartItems) {
+                        <div class="cart-item-row" @key="item.Product.Oid">
+                            <div class="cart-item-name" title="@item.Product.UrunAdi">@item.Product.UrunAdi</div>
+                            <div class="cart-item-quantity">
+                                <DxButton Click="() => DecreaseQuantity(item)" RenderStyle="ButtonRenderStyle.Secondary" SizeMode="SizeMode.Small" IconCssClass="fas fa-minus" Text="" Enabled="item.Quantity > 1" title="Azalt"/>
+                                <span>@item.Quantity</span>
+                                <DxButton Click="() => IncreaseQuantity(item)" RenderStyle="ButtonRenderStyle.Secondary" SizeMode="SizeMode.Small" IconCssClass="fas fa-plus" Text="" title="Artır"/>
+                            </div>
+                            <div class="cart-item-price">@item.LineTotal.ToString("C2")</div>
+                            <div class="cart-item-actions">
+                                <DxButton Click="() => RemoveItemFromCart(item)" RenderStyle="ButtonRenderStyle.Danger" SizeMode="SizeMode.Small" IconCssClass="fas fa-times" Text="" CssClass="remove-item-btn" title="Ürünü Sepetten Çıkar"/>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+
+            @* Toplam ve Ana Butonlar (Değişiklik yok) *@
+            @if (CartItems.Any()) { <div class="total-section"> Toplam: @TotalPrice.ToString("C2") </div> <DxButton Click="async () => await CompletePurchase()" Text="Satışı Tamamla" CssClass="w-100 mt-3 main-action-button" RenderStyle="ButtonRenderStyle.Primary" SizeMode="SizeMode.Large" Enabled="CanCompletePurchase()" /> }
+             <DxButton Click="async () => await ClearCart()" Text="Sepeti Temizle" CssClass="w-100 mt-2 main-action-button" RenderStyle="ButtonRenderStyle.Secondary" SizeMode="SizeMode.Large" Enabled="CartItems.Any()" />
+        </div>
+    </div>
+</div>
+
+@* ====================================================================== *@
+@* C# KOD BLOĞU                                                            *@
+@* ====================================================================== *@
+@code {
+    // --- Properties ---
+    private IObjectSpace? objectSpace;
+    private string Barcode { get; set; } = "";
+    private string KartNo { get; set; } = "";
+    private string UserName { get; set; } = "";
+    private decimal CardBalance { get; set; } = 0;
+    private ObservableCollection<CartItemViewModel> CartItems { get; set; } = new ObservableCollection<CartItemViewModel>();
+    private List<Urunler> AllProducts { get; set; } = new List<Urunler>();
+
+    // ****** İSİM GÜNCELLEMESİ: UrunKategorisi -> UrunKategori ******
+    private List<UrunKategori> Categories { get; set; } = new List<UrunKategori>();
+    // ************************************************************
+
+    private int ActiveCategoryIndex { get; set; } = 0;
+    private decimal TotalPrice => CartItems.Sum(item => item.LineTotal);
+    [Parameter] public View View { get; set; } = default!;
+    private DxTextBox? barcodeInputRef;
+
+    // --- Lifecycle Methods ---
+    protected override async System.Threading.Tasks.Task OnInitializedAsync() { await base.OnInitializedAsync(); }
+    protected override async System.Threading.Tasks.Task OnAfterRenderAsync(bool firstRender) { await base.OnAfterRenderAsync(firstRender); if (firstRender) { try { if (ApplicationProvider == null) { Console.WriteLine("Hata: ApplicationProvider inject edilemedi!"); return; } var application = ApplicationProvider.GetApplication(); if (application == null) { Console.WriteLine("Hata: XAF Application alınamadı!"); return; } objectSpace = application.CreateObjectSpace(typeof(Urunler)); LoadInitialData(); await FocusBarcodeInput(); StateHasChanged(); } catch (Exception ex) { Console.WriteLine($"Başlangıç verileri yüklenirken hata oluştu: {ex.Message}"); await JSRuntime.InvokeVoidAsync("alert", "Veriler yüklenirken bir sorun oluştu. Lütfen sayfayı yenileyin."); } } }
+    void IDisposable.Dispose() => objectSpace?.Dispose();
+
+    // --- Data Loading ---
+    private void LoadInitialData()
+    {
+        if (objectSpace == null) { Console.WriteLine("Uyarı: LoadInitialData çağrıldı ancak ObjectSpace null."); return; }
+        try
+        {
+            AllProducts = objectSpace.GetObjects<Urunler>(CriteriaOperator.Parse("!IsNullOrEmpty(UrunAdi)")).OrderBy(p => p.UrunAdi).ToList();
+
+            // ****** İSİM GÜNCELLEMESİ: UrunKategorisi -> UrunKategori ******
+            // ****** Property Adı KONTROLÜ: OrderBy(c => c.KategoriAdi) - Doğru mu? ******
+            Categories = objectSpace.GetObjects<UrunKategori>().OrderBy(c => c.Kategori).ToList();
+            // *********************************************************************
+
+        }
+        catch (Exception ex) { Console.WriteLine($"Veri çekme hatası (LoadInitialData): {ex}"); AllProducts = new List<Urunler>(); Categories = new List<UrunKategori>(); } // Hata durumunda listeyi boşalt
+    }
+
+    // ****** İSİM GÜNCELLEMESİ: UrunKategorisi -> UrunKategori ******
+    private List<Urunler> GetProductsForCategory(UrunKategori category)
+    {
+        if (category == null || AllProducts == null) return new List<Urunler>();
+        // ****** Urunler sınıfınızdaki Kategori property'sinin adını ve tipinin 'UrunKategori' olduğunu kontrol edin ******
+        return AllProducts.Where(p => p.Kategori != null && p.Kategori.Oid == category.Oid).ToList();
+    }
+
+    // ****** İSİM GÜNCELLEMESİ: UrunKategorisi -> UrunKategori ******
+    // ****** Property Adı KONTROLÜ: category?.KategoriAdi - Doğru mu? ******
+    private string GetCategoryName(UrunKategori category) => category?.Kategori ?? "İsimsiz Kategori";
+    // *******************************************************************
+
+    // --- Barcode / Card Handling ---
+    private async System.Threading.Tasks.Task HandleBarcodeKeyDown(KeyboardEventArgs e) { if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(Barcode)) { await ProcessBarcodeScan(); Barcode = ""; await FocusBarcodeInput(); } }
+    private async System.Threading.Tasks.Task ProcessBarcodeScan() { if (objectSpace == null || string.IsNullOrWhiteSpace(Barcode)) return; string currentInput = Barcode.Trim(); try { var kartBilgisi = objectSpace.FirstOrDefault<KartBilgileri>(k => k.KartNo == currentInput); if (kartBilgisi != null) { KartNo = kartBilgisi.KartNo; UserName = kartBilgisi.AdiSoyadi ?? "N/A"; CardBalance = kartBilgisi.KartBakiye; Console.WriteLine($"Kart bulundu: {UserName}, Bakiye: {CardBalance}"); } else { var product = objectSpace.FirstOrDefault<Urunler>(p => p.Barkodu == currentInput); if (product != null) { AddItemToCart(product); Console.WriteLine($"Ürün bulundu ve eklendi: {product.UrunAdi}"); } else { Console.WriteLine($"Girdi '{currentInput}' ile eşleşen kart veya ürün bulunamadı."); await JSRuntime.InvokeVoidAsync("alert", $"'{currentInput}' ile eşleşen Kart veya Ürün bulunamadı!"); } } } catch (Exception ex) { Console.WriteLine($"Barkod işleme hatası: {ex}"); await JSRuntime.InvokeVoidAsync("alert", "Barkod işlenirken bir hata oluştu."); } finally { StateHasChanged(); } }
+    private async System.Threading.Tasks.Task ClearCardInfo() { KartNo = string.Empty; UserName = string.Empty; CardBalance = 0; StateHasChanged(); await FocusBarcodeInput(); }
+
+    // --- Cart Management ---
+    private void AddItemToCart(Urunler product) { if (product == null) return; var existingItem = CartItems.FirstOrDefault(item => item.Product.Oid == product.Oid); if (existingItem != null) { existingItem.Quantity++; Console.WriteLine($"Miktar artırıldı: {existingItem.Product.UrunAdi}, Yeni Miktar: {existingItem.Quantity}"); } else { CartItems.Add(new CartItemViewModel { Product = product, Quantity = 1 }); Console.WriteLine($"Yeni ürün eklendi: {product.UrunAdi}"); } }
+
+    // ****** CS1059 HATASI DÜZELTMESİ ******
+    private void IncreaseQuantity(CartItemViewModel item)
+    {
+        // Önce null kontrolü yap, sonra artır
+        if (item != null)
+        {
+            item.Quantity++;
+        }
+    }
+    // **************************************
+
+    private void DecreaseQuantity(CartItemViewModel item) { if (item != null && item.Quantity > 1) item.Quantity--; }
+    private void RemoveItemFromCart(CartItemViewModel item) { if (item != null) { Console.WriteLine($"Ürün çıkarıldı: {item.Product.UrunAdi}"); CartItems.Remove(item); } }
+    private async System.Threading.Tasks.Task ClearCart() { CartItems.Clear(); Console.WriteLine("Sepet temizlendi."); await FocusBarcodeInput(); }
+
+    // --- Purchase Completion ---
+     private bool CanCompletePurchase() { if (!CartItems.Any()) return false; if (!string.IsNullOrEmpty(KartNo)) return CardBalance >= TotalPrice; return true; }
+    private async System.Threading.Tasks.Task CompletePurchase() { if (!CanCompletePurchase()) { await JSRuntime.InvokeVoidAsync("alert", "Satış tamamlanamıyor. Lütfen sepeti ve kart bakiyesini kontrol edin."); return; } Console.WriteLine("Satış işlemi başlatılıyor..."); using var purchaseObjectSpace = ObjectSpaceFactory.CreateObjectSpace<SatilanUrunler>(); KartBilgileri? cardInPurchaseContext = null; try { if (!string.IsNullOrEmpty(KartNo)) { cardInPurchaseContext = purchaseObjectSpace.FirstOrDefault<KartBilgileri>(k => k.KartNo == KartNo); if (cardInPurchaseContext == null) { await JSRuntime.InvokeVoidAsync("alert", "Hata: Satış sırasında kart bilgisi veritabanında bulunamadı! Yönetici ile görüşün."); Console.WriteLine($"Kritik Hata: Kart No '{KartNo}' satış anında purchaseObjectSpace içinde bulunamadı."); return; } if (cardInPurchaseContext.KartBakiye < TotalPrice) { await JSRuntime.InvokeVoidAsync("alert", "Hata: İşlem sırasında bakiye yetersiz kaldı!"); CardBalance = cardInPurchaseContext.KartBakiye; StateHasChanged(); return; } Console.WriteLine($"Satış için Kart ({cardInPurchaseContext.KartNo}) bulundu, bakiye ({cardInPurchaseContext.KartBakiye}) yeterli."); } DateTime saleTime = DateTime.Now; foreach (var item in CartItems) { var productInPurchaseContext = purchaseObjectSpace.GetObject(item.Product); if (productInPurchaseContext == null) { Console.WriteLine($"Kritik Hata: Ürün OID {item.Product.Oid} ({item.Product.UrunAdi}) satış anında purchaseObjectSpace'e getirilemedi!"); continue; } for (int i = 0; i < item.Quantity; i++) { var satilanUrun = purchaseObjectSpace.CreateObject<SatilanUrunler>(); satilanUrun.Tarih = saleTime; satilanUrun.Barkodu = productInPurchaseContext.Barkodu; satilanUrun.UrunAdi = productInPurchaseContext.UrunAdi; satilanUrun.Fiyat = productInPurchaseContext.Fiyat; if (productInPurchaseContext.Kategori != null) { /* ****** İSİM GÜNCELLEMESİ: UrunKategorisi -> UrunKategori ****** */ satilanUrun.Kategori = purchaseObjectSpace.GetObject(productInPurchaseContext.Kategori); /* ************************************************************ */ } satilanUrun.KartBilgisi = cardInPurchaseContext; Console.WriteLine($"Satılan ürün kaydı oluşturuldu: {satilanUrun.UrunAdi} (Adet {i+1}/{item.Quantity})"); } } if (cardInPurchaseContext != null) { cardInPurchaseContext.KartBakiye -= TotalPrice; Console.WriteLine($"Kart bakiyesi güncellendi: {cardInPurchaseContext.KartNo}, Yeni Bakiye: {cardInPurchaseContext.KartBakiye}"); } purchaseObjectSpace.CommitChanges(); Console.WriteLine("Değişiklikler başarıyla kaydedildi (CommitChanges)."); if(cardInPurchaseContext != null) { CardBalance = cardInPurchaseContext.KartBakiye; } await ClearCart(); await JSRuntime.InvokeVoidAsync("alert", "Satış başarıyla tamamlandı!"); } catch (Exception ex) { Console.WriteLine($"Satış kaydetme sırasında kritik hata: {ex}"); try { purchaseObjectSpace.Rollback(); Console.WriteLine("Değişiklikler geri alındı (Rollback)."); } catch { /* Rollback hata */ } await JSRuntime.InvokeVoidAsync("alert", $"Satış sırasında bir hata oluştu! Değişiklikler geri alındı. Hata: {ex.Message}"); } }
+
+    // --- UI Helpers ---
+    private async System.Threading.Tasks.Task FocusBarcodeInput() { try { if(barcodeInputRef != null) { await barcodeInputRef.FocusAsync(); } else { await JSRuntime.InvokeVoidAsync("BlazorFocusElement", "barcodeInput"); } } catch (Exception ex) { Console.WriteLine($"Barkod inputuna odaklanırken hata: {ex.Message}"); } }
+    /* <script> window.BlazorFocusElement = (id) => { try { document.getElementById(id)?.focus(); } catch (e) { console.error('BlazorFocusElement error:', e); } }; </script> */
+
+    // --- View Model for Cart Items ---
+    public class CartItemViewModel : INotifyPropertyChanged { private int _quantity; private Urunler _product = default!; public Urunler Product { get => _product; set { _product = value; OnPropertyChanged(nameof(Product)); OnPropertyChanged(nameof(LineTotal)); } } public int Quantity { get => _quantity; set { if (_quantity != value && value > 0) { _quantity = value; OnPropertyChanged(nameof(Quantity)); OnPropertyChanged(nameof(LineTotal)); } } } public decimal LineTotal => (Product?.Fiyat ?? 0) * Quantity; public event PropertyChangedEventHandler? PropertyChanged; protected virtual void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName)); }
+
+} // 

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ZekiKod\Desktop\YildizOtoMasyonKart\WebAccess\WebAccess\bin\Debug\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-08-09T14:28:13.6839788Z;True|2024-08-09T17:16:27.2571360+03:00;False|2024-08-09T17:13:06.0310680+03:00;False|2024-08-09T17:08:22.5424554+03:00;False|2024-08-09T17:07:46.7871149+03:00;False|2024-08-09T17:06:34.0326463+03:00;False|2024-08-08T15:41:43.3453690+03:00;True|2024-06-29T01:57:33.6112634+03:00;False|2024-06-29T01:50:24.8319218+03:00;False|2024-06-29T01:49:58.1845680+03:00;True|2024-06-22T10:36:11.6192082+03:00;True|2024-06-21T19:29:16.6265870+03:00;True|2024-06-17T01:13:54.9824197+03:00;True|2024-06-16T21:08:15.6625976+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

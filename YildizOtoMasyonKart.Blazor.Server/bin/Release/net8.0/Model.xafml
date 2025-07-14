@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application PreferredLanguage="tr" Title="ZekiKod Yazılım">
+  <BOModel>
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.Cihazlar" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="" />
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.GecisUcretleri" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="" />
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.GirisCikislar" DefaultListViewImage="" DefaultDetailViewImage="" ImageName="">
+      <OwnMembers>
+        <Member Name="Kapi" LookupProperty="Adi" />
+        <Member Name="KartBilgileri" LookupProperty="AdiSoyadi" />
+        <Member Name="KartGrubu" LookupProperty="Grubu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.indirimler" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="" />
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.Kapilar" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="" />
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.KartBilgileri" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="">
+      <OwnMembers>
+        <Member Name="indirimli" LookupProperty="Aciklama" />
+        <Member Name="KartGrubu" LookupProperty="Grubu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.KartGrubu" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="" />
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.KartOdeme" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="">
+      <OwnMembers>
+        <Member Name="KartBilgisi" LookupProperty="AdiSoyadi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.Kasa" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="" />
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.KasaDetay" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="" />
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.SatilanUrunler" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="">
+      <OwnMembers>
+        <Member Name="KartBilgisi" LookupProperty="AdiSoyadi" />
+        <Member Name="Kategori" LookupProperty="Kategori" />
+      </OwnMembers>
+    </Class>
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.UrunKategori" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="" />
+    <Class Name="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB.Urunler" DefaultDetailViewImage="" DefaultListViewImage="" ImageName="">
+      <OwnMembers>
+        <Member Name="Kategori" LookupProperty="Kategori" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems NavigationStyle="NavBar" ShowImages="False" StartupNavigationItem="KartBilgileri_ListView">
+    <Items>
+      <Item Id="KartBilgileri_ListView" ViewId="KartBilgileri_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+      <Item Id="@d6202129-3efe-4e8c-9687-0700ca99a5a5" ViewId="@SatisEkrani" IsNewNode="True" />
+      <Item Id="Default">
+        <Items>
+          <Item Id="KartBilgileri_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options UIType="SingleWindowSDI" RestoreTabbedMdiLayout="False" ShowTabImage="True" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DashboardView Id="@SatisEkrani" Caption="SatisEkrani" IsNewNode="True">
+      <Items IsNewNode="True">
+        <BarcodeCamViewItem Id="@SatisEkrani" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" IsNewNode="True">
+          <LayoutItem Id="@SatisEkrani" ViewItem="@SatisEkrani" Index="0" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <ListView Id="GirisCikislar_ListView" IsFooterVisible="True" AutoExpandAllGroups="True" IsGroupPanelVisible="True">
+      <Columns>
+        <ColumnInfo Id="Kapi" LookupProperty="Adi" />
+        <ColumnInfo Id="Tutar">
+          <Summary>
+            <ColumnSummaryItem Id="@d898802b-c225-4ff0-b54b-752b4861f45d" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="KartGrubu" LookupProperty="Grubu" />
+        <ColumnInfo Id="KartBilgileri" LookupProperty="AdiSoyadi" />
+        <ColumnInfo Id="iade">
+          <Summary>
+            <ColumnSummaryItem Id="@6e7f0451-da14-4956-8129-14eb8725b76d" SummaryType="Count" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <DetailView Id="KartBilgileri_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="37.72652388797364">
+            <LayoutGroup Id="KartBilgileri" RelativeSize="84.27947598253274">
+              <LayoutGroup Id="KartBilgileri_col1" RelativeSize="49.91023339317774">
+                <LayoutItem Id="KartNo" RelativeSize="20" />
+                <LayoutItem Id="KartID" ViewItem="KartID" Index="1" RelativeSize="15" IsNewNode="True" />
+                <LayoutItem Id="AdiSoyadi" Index="2" RelativeSize="15" />
+                <LayoutItem Id="Telefonu" Index="3" RelativeSize="15" />
+                <LayoutItem Id="Email" Index="4" RelativeSize="15" />
+                <LayoutItem Id="KartBakiye" Index="5" RelativeSize="20" />
+              </LayoutGroup>
+              <LayoutGroup Id="KartBilgileri_col2" RelativeSize="50.08976660682226">
+                <LayoutItem Id="KartGrubu" RelativeSize="20" />
+                <LayoutItem Id="SinirsizGecis" RelativeSize="15" />
+                <LayoutItem Id="indirimli" RelativeSize="65" />
+                <LayoutItem Id="KartID" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="15.720524017467248">
+              <LayoutItem Id="Oid" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="62.27347611202636">
+            <LayoutGroup Id="KartOdemes" RelativeSize="100">
+              <LayoutItem Id="KartOdemes" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="GirisCikislars" RelativeSize="100">
+              <LayoutItem Id="GirisCikislars" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="KartBilgileri_KartOdemes_ListView">
+      <Columns>
+        <ColumnInfo Id="YatanTutar">
+          <Summary>
+            <ColumnSummaryItem Id="@fe0e28ab-1608-4bee-b6c2-f366604a0b60" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <ListView Id="KartBilgileri_ListView" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="KartBakiye">
+          <Summary>
+            <ColumnSummaryItem Id="@795d7cde-a4c9-49d5-9234-c6fef9c872f8" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="KartGrubu" LookupProperty="Grubu" />
+        <ColumnInfo Id="indirimli" LookupProperty="Aciklama" />
+      </Columns>
+    </ListView>
+    <ListView Id="KartBilgileri_SatilanUrunlers_ListView" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="Fiyat">
+          <Summary>
+            <ColumnSummaryItem Id="@1a65e81b-8305-4e32-a67d-ad6b68b9cec5" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <ListView Id="KartOdeme_ListView" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="YatanTutar">
+          <Summary>
+            <ColumnSummaryItem Id="@24ef68ec-7353-431d-8443-1dd7f01c026a" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="iade">
+          <Summary>
+            <ColumnSummaryItem Id="@b2db60c7-6fc0-4a07-8c34-17f6e72068d6" SummaryType="Count" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <ListView Id="SatilanUrunler_ListView" IsFooterVisible="True" IsGroupPanelVisible="True">
+      <Columns>
+        <ColumnInfo Id="Fiyat">
+          <Summary>
+            <ColumnSummaryItem Id="@e2d97a27-dc37-4aed-82eb-639261b31848" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <ListView Id="Urunler_ListView">
+      <Columns>
+        <ColumnInfo Id="Kategori" LookupProperty="Kategori" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

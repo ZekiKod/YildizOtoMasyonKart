@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|d:\\\u00E7al\u0131\u015Fmalar\\yildizotomasyonkart\\webaccess\\webaccess\\webaccess_lib\\webaccessrun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess\\webaccess_lib\\webaccessrun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|d:\\\u00E7al\u0131\u015Fmalar\\yildizotomasyonkart\\webaccess\\webaccess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|d:\\\u00E7al\u0131\u015Fmalar\\yildizotomasyonkart\\webaccess\\webaccess\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|d:\\\u00E7al\u0131\u015Fmalar\\yildizotomasyonkart\\webaccess\\webaccess\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|d:\\\u00E7al\u0131\u015Fmalar\\yildizotomasyonkart\\webaccess\\webaccess\\lastcardsetting.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess\\lastcardsetting.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|d:\\\u00E7al\u0131\u015Fmalar\\yildizotomasyonkart\\webaccess\\webaccess\\listener_settings.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess\\listener_settings.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|d:\\\u00E7al\u0131\u015Fmalar\\yildizotomasyonkart\\webaccess\\webaccess\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|d:\\\u00E7al\u0131\u015Fmalar\\yildizotomasyonkart\\webaccess\\webaccess\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4C646C-7BC2-44DA-B570-49E4A1F6E600}|WebAccess\\WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "listener_settings.xml",
+              "DocumentMoniker": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\listener_settings.xml",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess\\listener_settings.xml",
+              "ToolTip": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\listener_settings.xml",
+              "RelativeToolTip": "WebAccess\\WebAccess\\listener_settings.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-06T21:07:32.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebAccess\\WebAccess\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-25T07:14:09.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "lastCardSetting.xml",
+              "DocumentMoniker": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\lastCardSetting.xml",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess\\lastCardSetting.xml",
+              "ToolTip": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\lastCardSetting.xml",
+              "RelativeToolTip": "WebAccess\\WebAccess\\lastCardSetting.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-25T07:13:51.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "XmlHelper.cs",
+              "DocumentMoniker": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\XmlHelper.cs",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess\\XmlHelper.cs",
+              "ToolTip": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\XmlHelper.cs",
+              "RelativeToolTip": "WebAccess\\WebAccess\\XmlHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T06:43:58.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\Program.cs",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess\\Program.cs",
+              "ToolTip": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\Program.cs",
+              "RelativeToolTip": "WebAccess\\WebAccess\\Program.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwFoAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T06:43:41.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess\\appsettings.json",
+              "ToolTip": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\appsettings.json",
+              "RelativeToolTip": "WebAccess\\WebAccess\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-25T06:43:35.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebAccessRun.cs",
+              "DocumentMoniker": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\WebAccess_Lib\\WebAccessRun.cs",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess\\WebAccess_Lib\\WebAccessRun.cs",
+              "ToolTip": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\WebAccess_Lib\\WebAccessRun.cs",
+              "RelativeToolTip": "WebAccess\\WebAccess\\WebAccess_Lib\\WebAccessRun.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:27:46.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\\u00C7al\u0131\u015Fmalar\\YildizOtoMasyonKart\\WebAccess\\WebAccess\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebAccess\\WebAccess\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA7wDQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:30:04.237Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

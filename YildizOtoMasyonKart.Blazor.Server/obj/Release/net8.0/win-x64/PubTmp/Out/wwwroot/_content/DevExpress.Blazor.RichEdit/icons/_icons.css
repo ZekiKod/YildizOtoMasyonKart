@@ -1,0 +1,1266 @@
+// this template was downloaded from https://github.com/backflip/gulp-iconfont-css/blob/8a7bae341afe27a8cd13ab8880a3a5e9906822ee/templates/_icons.scss
+@font-face {
+	font-family: "dxre-icons";
+	src: url('c:\Projects\WebRichEdit\WebRichEdit\styles\iconsdxre-icons.woff2') format('woff2'),
+		url('c:\Projects\WebRichEdit\WebRichEdit\styles\iconsdxre-icons.woff') format('woff'),
+		url('c:\Projects\WebRichEdit\WebRichEdit\styles\iconsdxre-icons.ttf') format('truetype');
+}
+
+@mixin dxre-icon-styles {
+	font-family: "dxre-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%dxre-icon {
+	@include dxre-icon-styles;
+}
+
+@function dxre-icon-char($filename) {
+	$char: "";
+
+	@if $filename == ContinueNumbering {
+		$char: "\E001";
+	}
+	@if $filename == FloatingObjectLayoutOptions {
+		$char: "\E002";
+	}
+	@if $filename == Font {
+		$char: "\E003";
+	}
+	@if $filename == Paragraph {
+		$char: "\E004";
+	}
+	@if $filename == RestartNumbering {
+		$char: "\E005";
+	}
+	@if $filename == SelectAll {
+		$char: "\E006";
+	}
+	@if $filename == ToggleFieldCodes {
+		$char: "\E007";
+	}
+	@if $filename == UpdateField {
+		$char: "\E008";
+	}
+	@if $filename == DeleteHyperlink {
+		$char: "\E009";
+	}
+	@if $filename == Download {
+		$char: "\E00A";
+	}
+	@if $filename == DocumentProperties {
+		$char: "\E00B";
+	}
+	@if $filename == DocumentStatistics {
+		$char: "\E00C";
+	}
+	@if $filename == New {
+		$char: "\E00D";
+	}
+	@if $filename == Open {
+		$char: "\E00E";
+	}
+	@if $filename == Preview {
+		$char: "\E00F";
+	}
+	@if $filename == Print {
+		$char: "\E010";
+	}
+	@if $filename == PrintDialog {
+		$char: "\E011";
+	}
+	@if $filename == Redo {
+		$char: "\E012";
+	}
+	@if $filename == Save {
+		$char: "\E013";
+	}
+	@if $filename == SaveAs {
+		$char: "\E014";
+	}
+	@if $filename == Undo {
+		$char: "\E015";
+	}
+	@if $filename == FloatingObjectAlignment {
+		$char: "\E016";
+	}
+	@if $filename == FloatingObjectTextWrapType {
+		$char: "\E017";
+	}
+	@if $filename == ClearHeaderAndFooter {
+		$char: "\E018";
+	}
+	@if $filename == DifferentFirstPage {
+		$char: "\E019";
+	}
+	@if $filename == DifferentOddAndEvenPages {
+		$char: "\E01A";
+	}
+	@if $filename == GoToFooter {
+		$char: "\E01B";
+	}
+	@if $filename == GoToHeader {
+		$char: "\E01C";
+	}
+	@if $filename == LinkToPrevious {
+		$char: "\E01D";
+	}
+	@if $filename == ShowNext {
+		$char: "\E01E";
+	}
+	@if $filename == ShowPrevious {
+		$char: "\E01F";
+	}
+	@if $filename == AlignCenter {
+		$char: "\E020";
+	}
+	@if $filename == AlignJustify {
+		$char: "\E021";
+	}
+	@if $filename == AlignLeft {
+		$char: "\E022";
+	}
+	@if $filename == AlignRight {
+		$char: "\E023";
+	}
+	@if $filename == Bold {
+		$char: "\E024";
+	}
+	@if $filename == ChangeFontStyle {
+		$char: "\E025";
+	}
+	@if $filename == ChangeTextCase {
+		$char: "\E026";
+	}
+	@if $filename == ClearFormatting {
+		$char: "\E027";
+	}
+	@if $filename == Copy {
+		$char: "\E028";
+	}
+	@if $filename == Cut {
+		$char: "\E029";
+	}
+	@if $filename == Find {
+		$char: "\E02A";
+	}
+	@if $filename == FontColor {
+		$char: "\E02B";
+	}
+	@if $filename == FontSize {
+		$char: "\E02C";
+	}
+	@if $filename == FontSizeDecrease {
+		$char: "\E02D";
+	}
+	@if $filename == FontSizeIncrease {
+		$char: "\E02E";
+	}
+	@if $filename == Highlight {
+		$char: "\E02F";
+	}
+	@if $filename == IndentDecrease {
+		$char: "\E030";
+	}
+	@if $filename == IndentIncrease {
+		$char: "\E031";
+	}
+	@if $filename == Italic {
+		$char: "\E032";
+	}
+	@if $filename == LineSpacing {
+		$char: "\E033";
+	}
+	@if $filename == ListBullets {
+		$char: "\E034";
+	}
+	@if $filename == ListMultilevel {
+		$char: "\E035";
+	}
+	@if $filename == ListNumbers {
+		$char: "\E036";
+	}
+	@if $filename == Paste {
+		$char: "\E037";
+	}
+	@if $filename == PasteSpecial {
+		$char: "\E038";
+	}
+	@if $filename == Replace {
+		$char: "\E039";
+	}
+	@if $filename == Shading {
+		$char: "\E03A";
+	}
+	@if $filename == ShowHidden {
+		$char: "\E03B";
+	}
+	@if $filename == Strikeout {
+		$char: "\E03C";
+	}
+	@if $filename == StrikeoutDouble {
+		$char: "\E03D";
+	}
+	@if $filename == Subscript {
+		$char: "\E03E";
+	}
+	@if $filename == Superscript {
+		$char: "\E03F";
+	}
+	@if $filename == Underline {
+		$char: "\E040";
+	}
+	@if $filename == UnderlineDouble {
+		$char: "\E041";
+	}
+	@if $filename == Hyperlink {
+		$char: "\E042";
+	}
+	@if $filename == Bookmark {
+		$char: "\E043";
+	}
+	@if $filename == Footer {
+		$char: "\E044";
+	}
+	@if $filename == Header {
+		$char: "\E045";
+	}
+	@if $filename == InsertFloatingObjectImage {
+		$char: "\E046";
+	}
+	@if $filename == InsertImage {
+		$char: "\E047";
+	}
+	@if $filename == InsertPageBreak {
+		$char: "\E048";
+	}
+	@if $filename == InsertPageCount {
+		$char: "\E049";
+	}
+	@if $filename == InsertPageNumber {
+		$char: "\E04A";
+	}
+	@if $filename == InsertTable {
+		$char: "\E04B";
+	}
+	@if $filename == InsertTextBox {
+		$char: "\E04C";
+	}
+	@if $filename == PageBreak {
+		$char: "\E04D";
+	}
+	@if $filename == Symbol {
+		$char: "\E04E";
+	}
+	@if $filename == InsertSectionBreakContinuous {
+		$char: "\E04F";
+	}
+	@if $filename == CustomizeMergeField {
+		$char: "\E050";
+	}
+	@if $filename == First {
+		$char: "\E051";
+	}
+	@if $filename == InsertDataField {
+		$char: "\E052";
+	}
+	@if $filename == Last {
+		$char: "\E053";
+	}
+	@if $filename == MailMerge {
+		$char: "\E054";
+	}
+	@if $filename == Next {
+		$char: "\E055";
+	}
+	@if $filename == Prev {
+		$char: "\E056";
+	}
+	@if $filename == ShowAllFieldCodes {
+		$char: "\E057";
+	}
+	@if $filename == ShowAllFieldResults {
+		$char: "\E058";
+	}
+	@if $filename == ViewMergedData {
+		$char: "\E059";
+	}
+	@if $filename == Columns {
+		$char: "\E05A";
+	}
+	@if $filename == ColumnsOne {
+		$char: "\E05B";
+	}
+	@if $filename == ColumnsThree {
+		$char: "\E05C";
+	}
+	@if $filename == ColumnsTwo {
+		$char: "\E05D";
+	}
+	@if $filename == InsertColumnBreak {
+		$char: "\E05E";
+	}
+	@if $filename == InsertSectionBreakEvenPage {
+		$char: "\E05F";
+	}
+	@if $filename == InsertSectionBreakNextPage {
+		$char: "\E060";
+	}
+	@if $filename == InsertSectionBreakOddPage {
+		$char: "\E061";
+	}
+	@if $filename == LineNumbering {
+		$char: "\E062";
+	}
+	@if $filename == PageColor {
+		$char: "\E063";
+	}
+	@if $filename == PageMargins {
+		$char: "\E064";
+	}
+	@if $filename == PageMarginsModerate {
+		$char: "\E065";
+	}
+	@if $filename == PageMarginsNarrow {
+		$char: "\E066";
+	}
+	@if $filename == PageMarginsNormal {
+		$char: "\E067";
+	}
+	@if $filename == PageMarginsWide {
+		$char: "\E068";
+	}
+	@if $filename == PageOrientation {
+		$char: "\E069";
+	}
+	@if $filename == PageOrientationLandscape {
+		$char: "\E06A";
+	}
+	@if $filename == PageOrientationPortrait {
+		$char: "\E06B";
+	}
+	@if $filename == PaperSize {
+		$char: "\E06C";
+	}
+	@if $filename == AlignFloatingObjectBottomCenter {
+		$char: "\E06D";
+	}
+	@if $filename == AlignFloatingObjectBottomLeft {
+		$char: "\E06E";
+	}
+	@if $filename == AlignFloatingObjectBottomRight {
+		$char: "\E06F";
+	}
+	@if $filename == AlignFloatingObjectMiddleCenter {
+		$char: "\E070";
+	}
+	@if $filename == AlignFloatingObjectMiddleLeft {
+		$char: "\E071";
+	}
+	@if $filename == AlignFloatingObjectMiddleRight {
+		$char: "\E072";
+	}
+	@if $filename == AlignFloatingObjectTopCenter {
+		$char: "\E073";
+	}
+	@if $filename == AlignFloatingObjectTopLeft {
+		$char: "\E074";
+	}
+	@if $filename == AlignFloatingObjectTopRight {
+		$char: "\E075";
+	}
+	@if $filename == FloatingObjectBringForward {
+		$char: "\E076";
+	}
+	@if $filename == FloatingObjectBringInFrontOfText {
+		$char: "\E077";
+	}
+	@if $filename == FloatingObjectBringToFront {
+		$char: "\E078";
+	}
+	@if $filename == FloatingObjectFillColor {
+		$char: "\E079";
+	}
+	@if $filename == FloatingObjectOutlineColor {
+		$char: "\E07A";
+	}
+	@if $filename == FloatingObjectSendBackward {
+		$char: "\E07B";
+	}
+	@if $filename == FloatingObjectSendBehindText {
+		$char: "\E07C";
+	}
+	@if $filename == FloatingObjectSendToBack {
+		$char: "\E07D";
+	}
+	@if $filename == TextWrapBehind {
+		$char: "\E07E";
+	}
+	@if $filename == TextWrapInFrontOfText {
+		$char: "\E07F";
+	}
+	@if $filename == TextWrapInline {
+		$char: "\E080";
+	}
+	@if $filename == TextWrapSquare {
+		$char: "\E081";
+	}
+	@if $filename == TextWrapThrough {
+		$char: "\E082";
+	}
+	@if $filename == TextWrapTight {
+		$char: "\E083";
+	}
+	@if $filename == TextWrapTopAndBottom {
+		$char: "\E084";
+	}
+	@if $filename == AddParagraphToTableOfContents {
+		$char: "\E085";
+	}
+	@if $filename == InsertCaption {
+		$char: "\E086";
+	}
+	@if $filename == InsertFigureCaption {
+		$char: "\E087";
+	}
+	@if $filename == InsertTableCaption {
+		$char: "\E088";
+	}
+	@if $filename == InsertTableOfCaptions {
+		$char: "\E089";
+	}
+	@if $filename == InsertTableOfContents {
+		$char: "\E08A";
+	}
+	@if $filename == InsertTableOfEquations {
+		$char: "\E08B";
+	}
+	@if $filename == UpdateTableOfContents {
+		$char: "\E08C";
+	}
+	@if $filename == DeleteComment {
+		$char: "\E08D";
+	}
+	@if $filename == EditRangePermission {
+		$char: "\E08E";
+	}
+	@if $filename == Language {
+		$char: "\E08F";
+	}
+	@if $filename == NewComment {
+		$char: "\E090";
+	}
+	@if $filename == NextComment {
+		$char: "\E091";
+	}
+	@if $filename == PreviousComment {
+		$char: "\E092";
+	}
+	@if $filename == ProtectDocument {
+		$char: "\E093";
+	}
+	@if $filename == Reviewers {
+		$char: "\E094";
+	}
+	@if $filename == ReviewingPane {
+		$char: "\E095";
+	}
+	@if $filename == ShowComments {
+		$char: "\E096";
+	}
+	@if $filename == SpellCheck {
+		$char: "\E097";
+	}
+	@if $filename == SpellCheckAsYouType {
+		$char: "\E098";
+	}
+	@if $filename == UnprotectDocument {
+		$char: "\E099";
+	}
+	@if $filename == AlignBottomCenter {
+		$char: "\E09A";
+	}
+	@if $filename == AlignBottomLeft {
+		$char: "\E09B";
+	}
+	@if $filename == AlignBottomRight {
+		$char: "\E09C";
+	}
+	@if $filename == AlignMiddleCenter {
+		$char: "\E09D";
+	}
+	@if $filename == AlignMiddleLeft {
+		$char: "\E09E";
+	}
+	@if $filename == AlignMiddleRight {
+		$char: "\E09F";
+	}
+	@if $filename == AlignTopCenter {
+		$char: "\E0A0";
+	}
+	@if $filename == AlignTopLeft {
+		$char: "\E0A1";
+	}
+	@if $filename == AlignTopRight {
+		$char: "\E0A2";
+	}
+	@if $filename == BorderBottom {
+		$char: "\E0A3";
+	}
+	@if $filename == BorderInsideHorizontal {
+		$char: "\E0A4";
+	}
+	@if $filename == BorderInsideVertical {
+		$char: "\E0A5";
+	}
+	@if $filename == BorderLeft {
+		$char: "\E0A6";
+	}
+	@if $filename == BorderNone {
+		$char: "\E0A7";
+	}
+	@if $filename == BorderOutside {
+		$char: "\E0A8";
+	}
+	@if $filename == BorderRight {
+		$char: "\E0A9";
+	}
+	@if $filename == BordersAll {
+		$char: "\E0AA";
+	}
+	@if $filename == BordersInside {
+		$char: "\E0AB";
+	}
+	@if $filename == BorderTop {
+		$char: "\E0AC";
+	}
+	@if $filename == DeleteTable {
+		$char: "\E0AD";
+	}
+	@if $filename == DeleteTableCells {
+		$char: "\E0AE";
+	}
+	@if $filename == DeleteTableColumns {
+		$char: "\E0AF";
+	}
+	@if $filename == DeleteTableRows {
+		$char: "\E0B0";
+	}
+	@if $filename == InsertTableCells {
+		$char: "\E0B1";
+	}
+	@if $filename == InsertTableColumnsToTheLeft {
+		$char: "\E0B2";
+	}
+	@if $filename == InsertTableColumnsToTheRight {
+		$char: "\E0B3";
+	}
+	@if $filename == InsertTableRowsAbove {
+		$char: "\E0B4";
+	}
+	@if $filename == InsertTableRowsBelow {
+		$char: "\E0B5";
+	}
+	@if $filename == MergeTableCells {
+		$char: "\E0B6";
+	}
+	@if $filename == PenColor {
+		$char: "\E0B7";
+	}
+	@if $filename == Select {
+		$char: "\E0B8";
+	}
+	@if $filename == SelectTable {
+		$char: "\E0B9";
+	}
+	@if $filename == SelectTableCell {
+		$char: "\E0BA";
+	}
+	@if $filename == SelectTableColumn {
+		$char: "\E0BB";
+	}
+	@if $filename == SelectTableRow {
+		$char: "\E0BC";
+	}
+	@if $filename == SplitTable {
+		$char: "\E0BD";
+	}
+	@if $filename == SplitTableCells {
+		$char: "\E0BE";
+	}
+	@if $filename == TableAutoFitContents {
+		$char: "\E0BF";
+	}
+	@if $filename == TableAutoFitWindow {
+		$char: "\E0C0";
+	}
+	@if $filename == TableCellMargins {
+		$char: "\E0C1";
+	}
+	@if $filename == TableFixedColumnWidth {
+		$char: "\E0C2";
+	}
+	@if $filename == TableProperties {
+		$char: "\E0C3";
+	}
+	@if $filename == ViewTableGridlines {
+		$char: "\E0C4";
+	}
+	@if $filename == DraftView {
+		$char: "\E0C5";
+	}
+	@if $filename == FullScreen {
+		$char: "\E0C6";
+	}
+	@if $filename == PrintLayoutView {
+		$char: "\E0C7";
+	}
+	@if $filename == RulerHorizontal {
+		$char: "\E0C8";
+	}
+	@if $filename == RulerVertical {
+		$char: "\E0C9";
+	}
+	@if $filename == SimpleView {
+		$char: "\E0CA";
+	}
+	@if $filename == ZoomIn {
+		$char: "\E0CB";
+	}
+	@if $filename == ZoomOut {
+		$char: "\E0CC";
+	}
+
+	@return $char;
+}
+
+@mixin dxre-icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %dxre-icon;
+		} @else {
+			@include dxre-icon-styles;
+		}
+		content: dxre-icon-char($filename);
+	}
+}
+
+.dxre-icon-ContinueNumbering {
+	@include dxre-icon(ContinueNumbering);
+}
+.dxre-icon-FloatingObjectLayoutOptions {
+	@include dxre-icon(FloatingObjectLayoutOptions);
+}
+.dxre-icon-Font {
+	@include dxre-icon(Font);
+}
+.dxre-icon-Paragraph {
+	@include dxre-icon(Paragraph);
+}
+.dxre-icon-RestartNumbering {
+	@include dxre-icon(RestartNumbering);
+}
+.dxre-icon-SelectAll {
+	@include dxre-icon(SelectAll);
+}
+.dxre-icon-ToggleFieldCodes {
+	@include dxre-icon(ToggleFieldCodes);
+}
+.dxre-icon-UpdateField {
+	@include dxre-icon(UpdateField);
+}
+.dxre-icon-DeleteHyperlink {
+	@include dxre-icon(DeleteHyperlink);
+}
+.dxre-icon-Download {
+	@include dxre-icon(Download);
+}
+.dxre-icon-DocumentProperties {
+	@include dxre-icon(DocumentProperties);
+}
+.dxre-icon-DocumentStatistics {
+	@include dxre-icon(DocumentStatistics);
+}
+.dxre-icon-New {
+	@include dxre-icon(New);
+}
+.dxre-icon-Open {
+	@include dxre-icon(Open);
+}
+.dxre-icon-Preview {
+	@include dxre-icon(Preview);
+}
+.dxre-icon-Print {
+	@include dxre-icon(Print);
+}
+.dxre-icon-PrintDialog {
+	@include dxre-icon(PrintDialog);
+}
+.dxre-icon-Redo {
+	@include dxre-icon(Redo);
+}
+.dxre-icon-Save {
+	@include dxre-icon(Save);
+}
+.dxre-icon-SaveAs {
+	@include dxre-icon(SaveAs);
+}
+.dxre-icon-Undo {
+	@include dxre-icon(Undo);
+}
+.dxre-icon-FloatingObjectAlignment {
+	@include dxre-icon(FloatingObjectAlignment);
+}
+.dxre-icon-FloatingObjectTextWrapType {
+	@include dxre-icon(FloatingObjectTextWrapType);
+}
+.dxre-icon-ClearHeaderAndFooter {
+	@include dxre-icon(ClearHeaderAndFooter);
+}
+.dxre-icon-DifferentFirstPage {
+	@include dxre-icon(DifferentFirstPage);
+}
+.dxre-icon-DifferentOddAndEvenPages {
+	@include dxre-icon(DifferentOddAndEvenPages);
+}
+.dxre-icon-GoToFooter {
+	@include dxre-icon(GoToFooter);
+}
+.dxre-icon-GoToHeader {
+	@include dxre-icon(GoToHeader);
+}
+.dxre-icon-LinkToPrevious {
+	@include dxre-icon(LinkToPrevious);
+}
+.dxre-icon-ShowNext {
+	@include dxre-icon(ShowNext);
+}
+.dxre-icon-ShowPrevious {
+	@include dxre-icon(ShowPrevious);
+}
+.dxre-icon-AlignCenter {
+	@include dxre-icon(AlignCenter);
+}
+.dxre-icon-AlignJustify {
+	@include dxre-icon(AlignJustify);
+}
+.dxre-icon-AlignLeft {
+	@include dxre-icon(AlignLeft);
+}
+.dxre-icon-AlignRight {
+	@include dxre-icon(AlignRight);
+}
+.dxre-icon-Bold {
+	@include dxre-icon(Bold);
+}
+.dxre-icon-ChangeFontStyle {
+	@include dxre-icon(ChangeFontStyle);
+}
+.dxre-icon-ChangeTextCase {
+	@include dxre-icon(ChangeTextCase);
+}
+.dxre-icon-ClearFormatting {
+	@include dxre-icon(ClearFormatting);
+}
+.dxre-icon-Copy {
+	@include dxre-icon(Copy);
+}
+.dxre-icon-Cut {
+	@include dxre-icon(Cut);
+}
+.dxre-icon-Find {
+	@include dxre-icon(Find);
+}
+.dxre-icon-FontColor {
+	@include dxre-icon(FontColor);
+}
+.dxre-icon-FontSize {
+	@include dxre-icon(FontSize);
+}
+.dxre-icon-FontSizeDecrease {
+	@include dxre-icon(FontSizeDecrease);
+}
+.dxre-icon-FontSizeIncrease {
+	@include dxre-icon(FontSizeIncrease);
+}
+.dxre-icon-Highlight {
+	@include dxre-icon(Highlight);
+}
+.dxre-icon-IndentDecrease {
+	@include dxre-icon(IndentDecrease);
+}
+.dxre-icon-IndentIncrease {
+	@include dxre-icon(IndentIncrease);
+}
+.dxre-icon-Italic {
+	@include dxre-icon(Italic);
+}
+.dxre-icon-LineSpacing {
+	@include dxre-icon(LineSpacing);
+}
+.dxre-icon-ListBullets {
+	@include dxre-icon(ListBullets);
+}
+.dxre-icon-ListMultilevel {
+	@include dxre-icon(ListMultilevel);
+}
+.dxre-icon-ListNumbers {
+	@include dxre-icon(ListNumbers);
+}
+.dxre-icon-Paste {
+	@include dxre-icon(Paste);
+}
+.dxre-icon-PasteSpecial {
+	@include dxre-icon(PasteSpecial);
+}
+.dxre-icon-Replace {
+	@include dxre-icon(Replace);
+}
+.dxre-icon-Shading {
+	@include dxre-icon(Shading);
+}
+.dxre-icon-ShowHidden {
+	@include dxre-icon(ShowHidden);
+}
+.dxre-icon-Strikeout {
+	@include dxre-icon(Strikeout);
+}
+.dxre-icon-StrikeoutDouble {
+	@include dxre-icon(StrikeoutDouble);
+}
+.dxre-icon-Subscript {
+	@include dxre-icon(Subscript);
+}
+.dxre-icon-Superscript {
+	@include dxre-icon(Superscript);
+}
+.dxre-icon-Underline {
+	@include dxre-icon(Underline);
+}
+.dxre-icon-UnderlineDouble {
+	@include dxre-icon(UnderlineDouble);
+}
+.dxre-icon-Hyperlink {
+	@include dxre-icon(Hyperlink);
+}
+.dxre-icon-Bookmark {
+	@include dxre-icon(Bookmark);
+}
+.dxre-icon-Footer {
+	@include dxre-icon(Footer);
+}
+.dxre-icon-Header {
+	@include dxre-icon(Header);
+}
+.dxre-icon-InsertFloatingObjectImage {
+	@include dxre-icon(InsertFloatingObjectImage);
+}
+.dxre-icon-InsertImage {
+	@include dxre-icon(InsertImage);
+}
+.dxre-icon-InsertPageBreak {
+	@include dxre-icon(InsertPageBreak);
+}
+.dxre-icon-InsertPageCount {
+	@include dxre-icon(InsertPageCount);
+}
+.dxre-icon-InsertPageNumber {
+	@include dxre-icon(InsertPageNumber);
+}
+.dxre-icon-InsertTable {
+	@include dxre-icon(InsertTable);
+}
+.dxre-icon-InsertTextBox {
+	@include dxre-icon(InsertTextBox);
+}
+.dxre-icon-PageBreak {
+	@include dxre-icon(PageBreak);
+}
+.dxre-icon-Symbol {
+	@include dxre-icon(Symbol);
+}
+.dxre-icon-InsertSectionBreakContinuous {
+	@include dxre-icon(InsertSectionBreakContinuous);
+}
+.dxre-icon-CustomizeMergeField {
+	@include dxre-icon(CustomizeMergeField);
+}
+.dxre-icon-First {
+	@include dxre-icon(First);
+}
+.dxre-icon-InsertDataField {
+	@include dxre-icon(InsertDataField);
+}
+.dxre-icon-Last {
+	@include dxre-icon(Last);
+}
+.dxre-icon-MailMerge {
+	@include dxre-icon(MailMerge);
+}
+.dxre-icon-Next {
+	@include dxre-icon(Next);
+}
+.dxre-icon-Prev {
+	@include dxre-icon(Prev);
+}
+.dxre-icon-ShowAllFieldCodes {
+	@include dxre-icon(ShowAllFieldCodes);
+}
+.dxre-icon-ShowAllFieldResults {
+	@include dxre-icon(ShowAllFieldResults);
+}
+.dxre-icon-ViewMergedData {
+	@include dxre-icon(ViewMergedData);
+}
+.dxre-icon-Columns {
+	@include dxre-icon(Columns);
+}
+.dxre-icon-ColumnsOne {
+	@include dxre-icon(ColumnsOne);
+}
+.dxre-icon-ColumnsThree {
+	@include dxre-icon(ColumnsThree);
+}
+.dxre-icon-ColumnsTwo {
+	@include dxre-icon(ColumnsTwo);
+}
+.dxre-icon-InsertColumnBreak {
+	@include dxre-icon(InsertColumnBreak);
+}
+.dxre-icon-InsertSectionBreakEvenPage {
+	@include dxre-icon(InsertSectionBreakEvenPage);
+}
+.dxre-icon-InsertSectionBreakNextPage {
+	@include dxre-icon(InsertSectionBreakNextPage);
+}
+.dxre-icon-InsertSectionBreakOddPage {
+	@include dxre-icon(InsertSectionBreakOddPage);
+}
+.dxre-icon-LineNumbering {
+	@include dxre-icon(LineNumbering);
+}
+.dxre-icon-PageColor {
+	@include dxre-icon(PageColor);
+}
+.dxre-icon-PageMargins {
+	@include dxre-icon(PageMargins);
+}
+.dxre-icon-PageMarginsModerate {
+	@include dxre-icon(PageMarginsModerate);
+}
+.dxre-icon-PageMarginsNarrow {
+	@include dxre-icon(PageMarginsNarrow);
+}
+.dxre-icon-PageMarginsNormal {
+	@include dxre-icon(PageMarginsNormal);
+}
+.dxre-icon-PageMarginsWide {
+	@include dxre-icon(PageMarginsWide);
+}
+.dxre-icon-PageOrientation {
+	@include dxre-icon(PageOrientation);
+}
+.dxre-icon-PageOrientationLandscape {
+	@include dxre-icon(PageOrientationLandscape);
+}
+.dxre-icon-PageOrientationPortrait {
+	@include dxre-icon(PageOrientationPortrait);
+}
+.dxre-icon-PaperSize {
+	@include dxre-icon(PaperSize);
+}
+.dxre-icon-AlignFloatingObjectBottomCenter {
+	@include dxre-icon(AlignFloatingObjectBottomCenter);
+}
+.dxre-icon-AlignFloatingObjectBottomLeft {
+	@include dxre-icon(AlignFloatingObjectBottomLeft);
+}
+.dxre-icon-AlignFloatingObjectBottomRight {
+	@include dxre-icon(AlignFloatingObjectBottomRight);
+}
+.dxre-icon-AlignFloatingObjectMiddleCenter {
+	@include dxre-icon(AlignFloatingObjectMiddleCenter);
+}
+.dxre-icon-AlignFloatingObjectMiddleLeft {
+	@include dxre-icon(AlignFloatingObjectMiddleLeft);
+}
+.dxre-icon-AlignFloatingObjectMiddleRight {
+	@include dxre-icon(AlignFloatingObjectMiddleRight);
+}
+.dxre-icon-AlignFloatingObjectTopCenter {
+	@include dxre-icon(AlignFloatingObjectTopCenter);
+}
+.dxre-icon-AlignFloatingObjectTopLeft {
+	@include dxre-icon(AlignFloatingObjectTopLeft);
+}
+.dxre-icon-AlignFloatingObjectTopRight {
+	@include dxre-icon(AlignFloatingObjectTopRight);
+}
+.dxre-icon-FloatingObjectBringForward {
+	@include dxre-icon(FloatingObjectBringForward);
+}
+.dxre-icon-FloatingObjectBringInFrontOfText {
+	@include dxre-icon(FloatingObjectBringInFrontOfText);
+}
+.dxre-icon-FloatingObjectBringToFront {
+	@include dxre-icon(FloatingObjectBringToFront);
+}
+.dxre-icon-FloatingObjectFillColor {
+	@include dxre-icon(FloatingObjectFillColor);
+}
+.dxre-icon-FloatingObjectOutlineColor {
+	@include dxre-icon(FloatingObjectOutlineColor);
+}
+.dxre-icon-FloatingObjectSendBackward {
+	@include dxre-icon(FloatingObjectSendBackward);
+}
+.dxre-icon-FloatingObjectSendBehindText {
+	@include dxre-icon(FloatingObjectSendBehindText);
+}
+.dxre-icon-FloatingObjectSendToBack {
+	@include dxre-icon(FloatingObjectSendToBack);
+}
+.dxre-icon-TextWrapBehind {
+	@include dxre-icon(TextWrapBehind);
+}
+.dxre-icon-TextWrapInFrontOfText {
+	@include dxre-icon(TextWrapInFrontOfText);
+}
+.dxre-icon-TextWrapInline {
+	@include dxre-icon(TextWrapInline);
+}
+.dxre-icon-TextWrapSquare {
+	@include dxre-icon(TextWrapSquare);
+}
+.dxre-icon-TextWrapThrough {
+	@include dxre-icon(TextWrapThrough);
+}
+.dxre-icon-TextWrapTight {
+	@include dxre-icon(TextWrapTight);
+}
+.dxre-icon-TextWrapTopAndBottom {
+	@include dxre-icon(TextWrapTopAndBottom);
+}
+.dxre-icon-AddParagraphToTableOfContents {
+	@include dxre-icon(AddParagraphToTableOfContents);
+}
+.dxre-icon-InsertCaption {
+	@include dxre-icon(InsertCaption);
+}
+.dxre-icon-InsertFigureCaption {
+	@include dxre-icon(InsertFigureCaption);
+}
+.dxre-icon-InsertTableCaption {
+	@include dxre-icon(InsertTableCaption);
+}
+.dxre-icon-InsertTableOfCaptions {
+	@include dxre-icon(InsertTableOfCaptions);
+}
+.dxre-icon-InsertTableOfContents {
+	@include dxre-icon(InsertTableOfContents);
+}
+.dxre-icon-InsertTableOfEquations {
+	@include dxre-icon(InsertTableOfEquations);
+}
+.dxre-icon-UpdateTableOfContents {
+	@include dxre-icon(UpdateTableOfContents);
+}
+.dxre-icon-DeleteComment {
+	@include dxre-icon(DeleteComment);
+}
+.dxre-icon-EditRangePermission {
+	@include dxre-icon(EditRangePermission);
+}
+.dxre-icon-Language {
+	@include dxre-icon(Language);
+}
+.dxre-icon-NewComment {
+	@include dxre-icon(NewComment);
+}
+.dxre-icon-NextComment {
+	@include dxre-icon(NextComment);
+}
+.dxre-icon-PreviousComment {
+	@include dxre-icon(PreviousComment);
+}
+.dxre-icon-ProtectDocument {
+	@include dxre-icon(ProtectDocument);
+}
+.dxre-icon-Reviewers {
+	@include dxre-icon(Reviewers);
+}
+.dxre-icon-ReviewingPane {
+	@include dxre-icon(ReviewingPane);
+}
+.dxre-icon-ShowComments {
+	@include dxre-icon(ShowComments);
+}
+.dxre-icon-SpellCheck {
+	@include dxre-icon(SpellCheck);
+}
+.dxre-icon-SpellCheckAsYouType {
+	@include dxre-icon(SpellCheckAsYouType);
+}
+.dxre-icon-UnprotectDocument {
+	@include dxre-icon(UnprotectDocument);
+}
+.dxre-icon-AlignBottomCenter {
+	@include dxre-icon(AlignBottomCenter);
+}
+.dxre-icon-AlignBottomLeft {
+	@include dxre-icon(AlignBottomLeft);
+}
+.dxre-icon-AlignBottomRight {
+	@include dxre-icon(AlignBottomRight);
+}
+.dxre-icon-AlignMiddleCenter {
+	@include dxre-icon(AlignMiddleCenter);
+}
+.dxre-icon-AlignMiddleLeft {
+	@include dxre-icon(AlignMiddleLeft);
+}
+.dxre-icon-AlignMiddleRight {
+	@include dxre-icon(AlignMiddleRight);
+}
+.dxre-icon-AlignTopCenter {
+	@include dxre-icon(AlignTopCenter);
+}
+.dxre-icon-AlignTopLeft {
+	@include dxre-icon(AlignTopLeft);
+}
+.dxre-icon-AlignTopRight {
+	@include dxre-icon(AlignTopRight);
+}
+.dxre-icon-BorderBottom {
+	@include dxre-icon(BorderBottom);
+}
+.dxre-icon-BorderInsideHorizontal {
+	@include dxre-icon(BorderInsideHorizontal);
+}
+.dxre-icon-BorderInsideVertical {
+	@include dxre-icon(BorderInsideVertical);
+}
+.dxre-icon-BorderLeft {
+	@include dxre-icon(BorderLeft);
+}
+.dxre-icon-BorderNone {
+	@include dxre-icon(BorderNone);
+}
+.dxre-icon-BorderOutside {
+	@include dxre-icon(BorderOutside);
+}
+.dxre-icon-BorderRight {
+	@include dxre-icon(BorderRight);
+}
+.dxre-icon-BordersAll {
+	@include dxre-icon(BordersAll);
+}
+.dxre-icon-BordersInside {
+	@include dxre-icon(BordersInside);
+}
+.dxre-icon-BorderTop {
+	@include dxre-icon(BorderTop);
+}
+.dxre-icon-DeleteTable {
+	@include dxre-icon(DeleteTable);
+}
+.dxre-icon-DeleteTableCells {
+	@include dxre-icon(DeleteTableCells);
+}
+.dxre-icon-DeleteTableColumns {
+	@include dxre-icon(DeleteTableColumns);
+}
+.dxre-icon-DeleteTableRows {
+	@include dxre-icon(DeleteTableRows);
+}
+.dxre-icon-InsertTableCells {
+	@include dxre-icon(InsertTableCells);
+}
+.dxre-icon-InsertTableColumnsToTheLeft {
+	@include dxre-icon(InsertTableColumnsToTheLeft);
+}
+.dxre-icon-InsertTableColumnsToTheRight {
+	@include dxre-icon(InsertTableColumnsToTheRight);
+}
+.dxre-icon-InsertTableRowsAbove {
+	@include dxre-icon(InsertTableRowsAbove);
+}
+.dxre-icon-InsertTableRowsBelow {
+	@include dxre-icon(InsertTableRowsBelow);
+}
+.dxre-icon-MergeTableCells {
+	@include dxre-icon(MergeTableCells);
+}
+.dxre-icon-PenColor {
+	@include dxre-icon(PenColor);
+}
+.dxre-icon-Select {
+	@include dxre-icon(Select);
+}
+.dxre-icon-SelectTable {
+	@include dxre-icon(SelectTable);
+}
+.dxre-icon-SelectTableCell {
+	@include dxre-icon(SelectTableCell);
+}
+.dxre-icon-SelectTableColumn {
+	@include dxre-icon(SelectTableColumn);
+}
+.dxre-icon-SelectTableRow {
+	@include dxre-icon(SelectTableRow);
+}
+.dxre-icon-SplitTable {
+	@include dxre-icon(SplitTable);
+}
+.dxre-icon-SplitTableCells {
+	@include dxre-icon(SplitTableCells);
+}
+.dxre-icon-TableAutoFitContents {
+	@include dxre-icon(TableAutoFitContents);
+}
+.dxre-icon-TableAutoFitWindow {
+	@include dxre-icon(TableAutoFitWindow);
+}
+.dxre-icon-TableCellMargins {
+	@include dxre-icon(TableCellMargins);
+}
+.dxre-icon-TableFixedColumnWidth {
+	@include dxre-icon(TableFixedColumnWidth);
+}
+.dxre-icon-TableProperties {
+	@include dxre-icon(TableProperties);
+}
+.dxre-icon-ViewTableGridlines {
+	@include dxre-icon(ViewTableGridlines);
+}
+.dxre-icon-DraftView {
+	@include dxre-icon(DraftView);
+}
+.dxre-icon-FullScreen {
+	@include dxre-icon(FullScreen);
+}
+.dxre-icon-PrintLayoutView {
+	@include dxre-icon(PrintLayoutView);
+}
+.dxre-icon-RulerHorizontal {
+	@include dxre-icon(RulerHorizontal);
+}
+.dxre-icon-RulerVertical {
+	@include dxre-icon(RulerVertical);
+}
+.dxre-icon-SimpleView {
+	@include dxre-icon(SimpleView);
+}
+.dxre-icon-ZoomIn {
+	@include dxre-icon(ZoomIn);
+}
+.dxre-icon-ZoomOut {
+	@include dxre-icon(ZoomOut);
+}

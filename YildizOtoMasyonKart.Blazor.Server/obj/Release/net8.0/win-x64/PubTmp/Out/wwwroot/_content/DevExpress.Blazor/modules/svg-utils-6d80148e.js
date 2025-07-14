@@ -1,0 +1,1 @@
+import{C as r}from"./css-classes-cee8476c.js";class s{static getSvgHtml(s){return`\n<svg class="${r.Image}" role="img" aria-hidden="true">\n    <use href="_content/DevExpress.Blazor/dx-blazor-f98cd0f48e.svg#${s}"></use>\n</svg>`}}s.ArrowUpIconName="dx-arrow-up",s.ArrowDownIconName="dx-arrow-down";export{s as S};

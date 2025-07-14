@@ -1,0 +1,14 @@
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\bin\Debug\net6.0\YildizOtoMasyonKart.Module.deps.json
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\bin\Debug\net6.0\YildizOtoMasyonKart.Module.dll
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\bin\Debug\net6.0\YildizOtoMasyonKart.Module.pdb
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\bin\Debug\net6.0\tr\YildizOtoMasyonKart.Module.resources.dll
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\YildizOtoMasyonKart.Module.csproj.AssemblyReference.cache
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\YildizOtoMasyonKart.Module.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\YildizOtoMasyonKart.Module.AssemblyInfoInputs.cache
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\YildizOtoMasyonKart.Module.AssemblyInfo.cs
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\YildizOtoMasyonKart.Module.csproj.CoreCompileInputs.cache
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\tr\YildizOtoMasyonKart.Module.resources.dll
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\YildizOtoMasyonKart.Module.dll
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\refint\YildizOtoMasyonKart.Module.dll
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\YildizOtoMasyonKart.Module.pdb
+C:\Users\ZekiKod\source\repos\YildizOtoMasyonKart\YildizOtoMasyonKart.Module\obj\Debug\net6.0\ref\YildizOtoMasyonKart.Module.dll

@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "09IEWvTmJNQa+zqlOr9P7EEyKyRXWy5HGwFis+2M+LQ=",
+  "Source": "WebAccess",
+  "BasePath": "_content/WebAccess",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAccess\\wwwroot",
+      "Source": "WebAccess",
+      "ContentRoot": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\wwwroot\\",
+      "BasePath": "_content/WebAccess",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

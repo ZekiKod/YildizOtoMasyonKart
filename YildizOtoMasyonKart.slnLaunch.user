@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Yeni Profil",
+    "Projects": [
+      {
+        "Path": "YildizOtoMasyonKart.Blazor.Server\\YildizOtoMasyonKart.Blazor.Server.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WebAccess\\WebAccess\\WebAccess.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

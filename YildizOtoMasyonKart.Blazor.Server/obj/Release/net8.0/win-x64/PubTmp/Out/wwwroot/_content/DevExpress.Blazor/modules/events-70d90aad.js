@@ -1,0 +1,1 @@
+import{C as e}from"./custom-events-helper-e7f279d3.js";var a;!function(e){e[e.Expand=0]="Expand",e[e.Collapse=1]="Collapse",e[e.Check=2]="Check"}(a||(a={}));class t extends CustomEvent{constructor(e){super(t.eventName,{detail:{action:e},bubbles:!0,composed:!1,cancelable:!0})}}t.eventName="dxbl-navigation.action-request",e.register(t.eventName,(e=>e.detail));export{a as N,t as a};

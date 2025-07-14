@@ -1,0 +1,13 @@
+import{dxFlyoutTagName as t}from"./flyout-9988afda.js";import{D as e}from"./popupportal-e116a31b.js";import{d as o}from"./events-interseptor-a522582a.js";import{a as r,b as s,H as i,J as p}from"./popup-e76e963a.js";import{_ as m}from"./tslib.es6-d65164b3.js";import{n as a}from"./property-4ec0b52d.js";import{e as c}from"./custom-element-267f9a21.js";import{s as n,i as d,x as l}from"./lit-element-462e7ad3.js";import"./point-e4ec110e.js";import"./layouthelper-67dd777a.js";import"./constants-7c047c0d.js";import"./query-44b9267f.js";import"./rafaction-bba7928b.js";import"./screenhelper-e9ec6e3e.js";import"./transformhelper-ebad0156.js";import"./positiontracker-754c1e75.js";import"./branch-aebd078a.js";import"./eventhelper-8bcec49f.js";import"./logicaltreehelper-67db40f1.js";import"./portal-e7c7352c.js";import"./data-qa-utils-8be7c726.js";import"./constants-38572198.js";import"./const-90026e45.js";import"./dx-html-element-pointer-events-helper-6dda355e.js";import"./dom-4684d8d6.js";import"./_commonjsHelpers-41cdd1e7.js";import"./string-2448bf95.js";import"./browser-3fc721b7.js";import"./devices-17b9ba08.js";import"./dx-ui-element-b777832b.js";import"./lit-element-base-b20b52b2.js";import"./dx-license-e00a5bc7.js";import"./capture-manager-fb670c21.js";import"./focushelper-2eea96ca.js";import"./nameof-factory-64d95f5b.js";import"./custom-events-helper-e7f279d3.js";import"./focustrap-d11cfef9.js";import"./tabbable-a2ae89a6.js";import"./key-a66127fc.js";import"./keyboard-navigation-strategy-0cccb7d5.js";import"./dom-utils-bf33c859.js";import"./css-classes-1103f305.js";import"./focus-utils-1fc0087c.js";import"./disposable-d2c2d283.js";const j="dxbl-flyout-root";let b=class extends n{constructor(){super(...arguments),this.dropOpposite=!1,this.dropDirection=r.Near,this.dropAlignment=s.bottom}static get styles(){return d`
+            :host {
+                display: flex;
+                flex: 1 1 auto;
+                flex-direction: column;
+                align-items: stretch;
+                justify-items: stretch;
+                min-height: 0;
+            }
+        }`}render(){return l`
+            <slot></slot>
+            <slot name="arrow"/>
+        `}};m([a({type:Object,attribute:"drop-opposite"})],b.prototype,"dropOpposite",void 0),m([a({type:String,attribute:"drop-direction"})],b.prototype,"dropDirection",void 0),m([a({type:String,attribute:"drop-alignment"})],b.prototype,"dropAlignment",void 0),b=m([c(j)],b);function f(t){if(!t)throw new Error("failed");return t}const u={getReference:f,registeredComponents:[t,i,j,e,o,p]};export{u as default,f as getReference};

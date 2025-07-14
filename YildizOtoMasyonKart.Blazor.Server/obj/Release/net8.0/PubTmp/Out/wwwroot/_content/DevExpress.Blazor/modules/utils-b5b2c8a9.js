@@ -1,0 +1,1 @@
+function e(e,n=100,r=1e4){return new Promise(((t,o)=>{const a=Date.now(),i=setInterval((()=>{const n=e();n?(t(n),clearInterval(i)):Date.now()-a>r&&(o(new Error("Timeout waiting for condition")),clearInterval(i))}),n)}))}const n={getReference:function(e){if(!e)throw new Error("failed");return e}};export{n as default,e as waitForCondition};

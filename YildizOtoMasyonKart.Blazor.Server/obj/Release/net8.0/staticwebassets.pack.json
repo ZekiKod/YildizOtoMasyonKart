@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ZekiKod\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ZekiKod\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ZekiKod\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\wwwroot\\images\\Logo.svg",
+      "PackagePath": "staticwebassets\\images\\Logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\ZekiKod\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
+      "PackagePath": "staticwebassets\\images\\SplashScreen.svg"
+    },
+    {
+      "Id": "C:\\Users\\ZekiKod\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\wwwroot\\scripts.js",
+      "PackagePath": "staticwebassets\\scripts.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.YildizOtoMasyonKart.Blazor.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.YildizOtoMasyonKart.Blazor.Server.props",
+      "PackagePath": "build\\YildizOtoMasyonKart.Blazor.Server.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.YildizOtoMasyonKart.Blazor.Server.props",
+      "PackagePath": "buildMultiTargeting\\YildizOtoMasyonKart.Blazor.Server.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.YildizOtoMasyonKart.Blazor.Server.props",
+      "PackagePath": "buildTransitive\\YildizOtoMasyonKart.Blazor.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

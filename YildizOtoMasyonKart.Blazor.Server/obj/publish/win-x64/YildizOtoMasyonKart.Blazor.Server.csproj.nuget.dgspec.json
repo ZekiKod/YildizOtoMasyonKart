@@ -1,0 +1,261 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\YildizOtoMasyonKart.Blazor.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\YildizOtoMasyonKart.Blazor.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\YildizOtoMasyonKart.Blazor.Server.csproj",
+        "projectName": "YildizOtoMasyonKart.Blazor.Server",
+        "projectPath": "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\YildizOtoMasyonKart.Blazor.Server.csproj",
+        "packagesPath": "C:\\Users\\Frisby\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Blazor.Server\\obj\\publish\\win-x64\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Frisby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Module\\YildizOtoMasyonKart.Module.csproj": {
+                "projectPath": "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Module\\YildizOtoMasyonKart.Module.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "DevExpress.Drawing.Skia": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Blazor": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.CodeAnalysis": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Dashboards.Blazor": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Office.Blazor": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.ReportsV2.Blazor": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Security.Xpo": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Validation.Blazor": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Module\\YildizOtoMasyonKart.Module.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Module\\YildizOtoMasyonKart.Module.csproj",
+        "projectName": "YildizOtoMasyonKart.Module",
+        "projectPath": "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Module\\YildizOtoMasyonKart.Module.csproj",
+        "packagesPath": "C:\\Users\\Frisby\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Frisby\\Desktop\\YildizOtoMasyonKart\\YildizOtoMasyonKart.Module\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Frisby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.11.4, )"
+            },
+            "DevExpress.ExpressApp": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.CodeAnalysis": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.ConditionalAppearance": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Dashboards": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Objects": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Office": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.ReportsV2": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Security": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Security.Xpo": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Validation": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.ExpressApp.Xpo": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.Persistent.Base": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "DevExpress.Persistent.BaseImpl.Xpo": {
+              "target": "Package",
+              "version": "[24.1.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.34.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

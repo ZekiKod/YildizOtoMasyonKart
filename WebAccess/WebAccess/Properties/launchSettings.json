@@ -1,0 +1,28 @@
+﻿{
+    "iisSettings": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iisExpress": {
+            "applicationUrl": "http://localhost:18563",
+            "sslPort": 0
+        }
+    },
+    "profiles": {
+        "WebAccess": {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": true,
+            // "applicationUrl" satırı kaldırıldı. Artık başlangıç URL'i Program.cs'deki Kestrel ayarlarından alınacak.
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        "IIS Express": {
+            "commandName": "IISExpress",
+            "launchBrowser": true,
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        }
+    }
+}

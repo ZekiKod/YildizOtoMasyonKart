@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a9a42faf-d18e-45df-9da1-d24c07ef9354" namespace="YildizOtomasyon.Module.BusinessObjects.YildizOtomasyonDB" dataBaseShemaInfo="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" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" createdInVersion="24.1.3.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="false" lastModifiedInVersion="24.1.3.0" name="YildizOtomasyonDB" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <classes>
+    <dataBaseObjectModelHasClasses Id="f2585269-51a7-4114-bc27-7d33336d61e2">
+      <xpObject Id="daae92ae-7069-41c9-a16b-a115b04595b3" name="KartBilgileri" baseClass="XPObject" userFileName="KartBilgileri" designerFileName="KartBilgileri.Designer" className="KartBilgileri" virtualName="KartBilgileri">
+        <fields>
+          <generalXpObjectHasFields Id="ab4ff640-e53b-47ea-8afa-35ac0d185576">
+            <field Id="d95228ea-063b-4513-8e98-752f78f72869" name="KartNo" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0bbd5dd3-8b98-4564-9e49-4e1c0cf1bf6c">
+            <field Id="6b228c74-aaab-4fc2-800f-06bc7a5ebafb" name="AdiSoyadi" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="426f25ab-cb87-4f9f-85e1-80f6bdfeac61">
+            <field Id="73716a0f-e7cf-4165-9cc2-774271367721" name="Telefonu" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d40a1d45-fa70-46d6-804c-e9ae6b5531bf">
+            <field Id="bddfef50-171f-42b3-9fe0-b0b4ed92bfa6" name="Email" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="82bc7929-b949-40bc-9bff-604368a9c741">
+            <field Id="0fdf129e-b1a7-454f-aee0-a06ba9e7e3e5" name="KartBakiye" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3aa3b027-4b01-478d-bbb8-a94694661736">
+            <field Id="f3a991f4-de9c-44ea-a2f1-3bbbcc859d6a" name="KartGrubu" virtualColumnType="KartGrubu" logicalType="KartGrubu" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4d33aacf-cbdb-4607-98aa-f38493a08af3">
+            <field Id="48f79bb3-eea7-45af-98a2-c1a65cd5761d" name="SinirsizGecis" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="52e3498d-d37a-43bc-a537-cb45173718b1">
+            <field Id="486cb385-d717-4cd0-a639-51df1cb05f8a" name="indirimli" columnType="Int64" virtualColumnType="indirimler" logicalType="indirimler" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8e7ff1b2-d016-4461-bfaa-f4d6e86c95ca">
+            <field Id="bb88bcfa-abb5-4459-8dde-b5b1cf3c81c8" name="KartID" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a53b363d-1ca7-4af9-b5b4-469df4ca64c6">
+            <field Id="9afc7abe-15e4-43c8-b65f-f0ba37a9aea3" name="Tarih" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <aggrTarget>
+          <aggregation Id="09558748-de04-4f49-9c23-d31c440aad87" sourceCollectionName="KartOdemes" name="KartOdemeReferencesKartBilgileri" targetFieldName="KartBilgisi">
+            <xpObjectMoniker Id="b8aaf8a5-2db6-4ad4-ac3e-468640ec1d4d" />
+          </aggregation>
+          <aggregation Id="99da5377-dbe7-4f0a-9aeb-05f1c71e338d" sourceCollectionName="GirisCikislars" name="GirisCikislarReferencesKartBilgileri" targetFieldName="KartBilgileri">
+            <xpObjectMoniker Id="d00f8fd9-9fc1-4825-81e1-67bdce29a599" />
+          </aggregation>
+          <aggregation Id="85aa61ec-5e19-4fab-bd35-e93340a5e565" sourceCollectionName="SatilanUrunlers" name="SatilanUrunlerReferencesKartBilgileri" targetFieldName="KartBilgisi">
+            <xpObjectMoniker Id="8d418938-585d-41c1-9357-e1cd96ebeeea" />
+          </aggregation>
+        </aggrTarget>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="c75ef390-d4a8-4821-93dc-fa9a85ca5c11">
+            <collectionField Id="067403dc-8702-4702-95db-e55b9bca12ef" name="KartOdemes" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="36ec4160-c22b-4159-8e07-186a702dcf2f">
+            <collectionField Id="7afc102f-fc99-47de-956a-5a57ad19c6ed" name="GirisCikislars" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="dbfe0be8-edab-4ae2-b891-de7d77ae783e">
+            <collectionField Id="ad3ab1a6-3282-4561-a331-e92e477154ce" name="SatilanUrunlers" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="0c6ede47-7496-4ac6-b2a7-bf1458ea7100">
+      <xpObject Id="b8aaf8a5-2db6-4ad4-ac3e-468640ec1d4d" name="KartOdeme" baseClass="XPObject" userFileName="KartOdeme" designerFileName="KartOdeme.Designer" className="KartOdeme" virtualName="KartOdeme">
+        <fields>
+          <generalXpObjectHasFields Id="8ad36778-df32-4206-afb7-b3b5e73b1bdf">
+            <field Id="9458f17c-6893-4fdb-8134-da4c4fe38675" name="Tarih" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f69de08f-259b-4869-bd45-bc832a681882">
+            <field Id="bc86f6d1-fd56-45cf-bf99-71b705d5b6f7" name="YatanTutar" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="34666735-b178-4be6-8484-22292b2ededa">
+            <field Id="faf36ef5-87fb-4375-9e4c-7a66f12d0f6f" name="iade" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dbdcffa1-0044-4ca6-b40a-facbfb1d58dd">
+            <field Id="a41b697e-bed0-42cf-9643-613c49b64f7d" name="KartBilgisi" virtualColumnType="KartBilgileri" logicalType="KartBilgileri" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a9228371-598b-4a36-bccd-49f345c3b685">
+            <field Id="be6def5b-8d61-4402-ad90-a1aa4cac71b9" name="KrediKarti" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="6b49e329-67eb-45b9-8eb8-9b6a5ce7fe66">
+      <xpObject Id="48604c58-b9b5-4c56-9706-c4162ff41fc6" name="indirimler" baseClass="XPObject" userFileName="indirimler" designerFileName="indirimler.Designer" className="indirimler" virtualName="indirimler">
+        <fields>
+          <generalXpObjectHasFields Id="14ca5c10-9482-4c6d-9ef4-55dbdde2298f">
+            <field Id="a91b060b-6e72-4cb0-a998-f9b940445a18" name="Tarihinden" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0a0f965c-9ed4-43fc-9dc5-e0df897993f9">
+            <field Id="08f4784b-366c-4b6a-b56f-8f2124040e82" name="Tarihine" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d2efc51e-facb-42e5-a937-8fd06e119f5c">
+            <field Id="a7bf887a-1744-4c7e-8c46-a52167c9fdc0" name="indirimOrani" columnType="Int32" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ba684dee-7173-470e-9abc-95928fb88b51">
+            <field Id="1780c8e6-701a-4e27-8572-52ec1bd7c45f" name="indirimTutari" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="27aa411a-9378-4c56-a8de-6cb9e481c931">
+            <field Id="d1e14538-8040-465b-bb78-4ef6898fc26c" name="KartGrubu" virtualColumnType="KartGrubu" logicalType="KartGrubu" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a644fd6a-2263-42a6-811b-bbf150919fc0">
+            <field Id="0911d053-0398-4c0d-939b-ef100150e9a3" name="Aciklama" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="f9e34892-b049-4a07-b436-bb9aba91dc48">
+      <xpObject Id="39be56e6-31c8-41d0-a2d8-49e2f7eeb3e0" name="KartGrubu" baseClass="XPObject" userFileName="KartGrubu" designerFileName="KartGrubu.Designer" className="KartGrubu" virtualName="KartGrubu">
+        <fields>
+          <generalXpObjectHasFields Id="e26344cb-e7cf-4e99-af77-877fb4fde848">
+            <field Id="70445798-50f4-4e20-a421-06572b6ca0dd" name="Grubu" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="deb18e46-3094-42ce-96c3-8da72d0bf2b5">
+      <xpObject Id="e1d5d4a6-d1de-4b46-b154-0d1758bc543b" name="GecisUcretleri" baseClass="XPObject" userFileName="GecisUcretleri" designerFileName="GecisUcretleri.Designer" className="GecisUcretleri" virtualName="GecisUcretleri">
+        <fields>
+          <generalXpObjectHasFields Id="9124e57e-6213-4851-bce4-31593f728228">
+            <field Id="03daf7a1-9800-4791-b0ce-0545cb9a4bb5" name="Tarih" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2269cad3-fa92-434a-9fd2-300bd9841431">
+            <field Id="d407e95d-4fd4-4ea9-8cef-0e2d87a5a6e7" name="Ucret" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="5ef7e2c0-645c-4eeb-9195-9492e074ca9b">
+      <xpObject Id="d00f8fd9-9fc1-4825-81e1-67bdce29a599" name="GirisCikislar" baseClass="XPObject" userFileName="GirisCikislar" designerFileName="GirisCikislar.Designer" className="GirisCikislar" virtualName="GirisCikislar">
+        <fields>
+          <generalXpObjectHasFields Id="470be3be-5bb9-4aff-883b-8cee4a9948b4">
+            <field Id="d92cf642-9e7f-4cc6-a6e8-a6964e922b14" name="Tarih" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7309b6a1-3b3c-46a1-9db4-3cd9176d6b19">
+            <field Id="709d46e4-3e07-4780-ba34-55b1731a3ee1" name="Kapi" virtualColumnType="Kapilar" logicalType="Kapilar" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6a8bf3e3-f590-4676-8298-6c873202f7ab">
+            <field Id="008b56d5-122e-4944-b8a9-4b0fbac026b3" name="Tutar" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9067666f-8b6d-434b-8b51-a25315f2e7cc">
+            <field Id="5b677a1d-c38a-4e1d-821b-c0bd9bf44c79" name="KartGrubu" virtualColumnType="KartGrubu" logicalType="KartGrubu" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e2f0cd09-aa1c-4fe0-a722-3d7a68683771">
+            <field Id="de92312b-cedf-467a-949b-a27be25a0352" name="KartBilgileri" virtualColumnType="KartBilgileri" logicalType="KartBilgileri" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c035bdfc-8bc9-4593-8df5-0393ede8d1e1">
+            <field Id="d70bc57f-44bc-4700-935e-4bf776304133" name="iade" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="7947411a-2faa-4c2c-88d8-edca81e90071">
+      <xpObject Id="739b5206-d640-480a-89f9-18ca3572b4ff" name="Cihazlar" baseClass="XPObject" userFileName="Cihazlar" designerFileName="Cihazlar.Designer" className="Cihazlar" virtualName="Cihazlar">
+        <fields>
+          <generalXpObjectHasFields Id="93cae027-5713-4d22-9518-10f46f46e057">
+            <field Id="db0ccbfb-d930-442c-b974-f13beae3d94f" name="CihazAdi" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cdb47a72-8b63-4609-84f0-256ef6a6b8ed">
+            <field Id="5ae29117-0be6-4f28-8cdc-79b77366b468" name="CihazId" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5d3de481-2f58-4075-b558-344bac41ad5e">
+            <field Id="e8abe63c-c57e-4abf-8217-945793b3d9a1" name="Modeli" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="697cb5b2-76a6-4e76-a551-d26d3341e50d">
+            <field Id="abfbfa8a-9a6a-4ab2-bd50-403b86a8f137" name="OkuyucuSayisi" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <aggrTarget>
+          <aggregation Id="fae43477-252c-40bf-af13-82efdec8b5c7" sourceCollectionName="Kapilars" name="KapilarReferencesCihazlar" targetFieldName="Cihaz">
+            <xpObjectMoniker Id="8e7a8373-ce01-4153-8b88-1cf4ded62aa4" />
+          </aggregation>
+        </aggrTarget>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="94da8f25-1e94-4bc9-8ef0-ee6a691f10ba">
+            <collectionField Id="8661760e-fe09-4b37-b70c-bf494a5b36a8" name="Kapilars" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="d15e7366-a877-4be5-9213-1cff408ded1b">
+      <xpObject Id="8e7a8373-ce01-4153-8b88-1cf4ded62aa4" name="Kapilar" baseClass="XPObject" userFileName="Kapilar" designerFileName="Kapilar.Designer" className="Kapilar" virtualName="Kapilar">
+        <fields>
+          <generalXpObjectHasFields Id="ec2b5f6d-f1ec-4a15-a0d9-01d4b74d19dc">
+            <field Id="b23a0574-b033-4f10-bf71-ac6eb8a3f116" name="Adi" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="74f5adab-9226-446e-9075-b8f9162285ba">
+            <field Id="9d12288b-019b-4343-b76e-c2c25c060555" name="Cihaz" columnType="Char" virtualColumnType="Cihazlar" logicalType="Cihazlar" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="470887bc-3d5c-49d9-a3c1-6eae0619d3c8">
+      <xpObject Id="4bb45555-2b18-4a49-bffc-b15cc96d2180" name="Urunler" baseClass="XPObject" userFileName="Urunler" designerFileName="Urunler.Designer" className="Urunler" virtualName="Urunler">
+        <fields>
+          <generalXpObjectHasFields Id="cc53f5d8-1642-4560-8c1a-2882e588dfe0">
+            <field Id="668eb15b-a3bc-4e2f-b017-7b1212ed3c1f" name="Barkodu" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="535ad81c-7975-4815-8b79-41810a22b0a4">
+            <field Id="31edfe0e-0631-4d66-94fd-d8b022d25ef5" name="UrunAdi" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7019964d-8cfe-4c86-9fb8-6a770608e8dc">
+            <field Id="3e69ceb6-9a59-4280-9ad7-ba9beccddf11" name="Kategori" columnType="UInt64" virtualColumnType="UrunKategori" logicalType="UrunKategori" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="bcda9ee2-af4c-4451-8889-8dbc457e4b9d">
+            <field Id="7c9f64fc-f8db-43bb-9efc-1682f134bb3f" name="Fiyat" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="34fb08cb-9665-4f08-9e1e-d6e3ab2efcba">
+      <xpObject Id="6202edf8-aab0-4562-83e8-8bb1a20b12cb" name="UrunKategori" baseClass="XPObject" userFileName="UrunKategori" designerFileName="UrunKategori.Designer" className="UrunKategori" virtualName="UrunKategori">
+        <fields>
+          <generalXpObjectHasFields Id="07a3cec7-f9eb-4d2f-902e-d6c102a60346">
+            <field Id="7859344e-50d5-4f1a-b520-d55476a2c0ca" name="Kategori" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="e42b4fac-ca30-4995-bbea-2fae8f1e5243">
+      <xpObject Id="8d418938-585d-41c1-9357-e1cd96ebeeea" name="SatilanUrunler" baseClass="XPObject" userFileName="SatilanUrunler" designerFileName="SatilanUrunler.Designer" className="SatilanUrunler" virtualName="SatilanUrunler">
+        <fields>
+          <generalXpObjectHasFields Id="f10419af-f5da-45dc-8fe6-f119450f04ba">
+            <field Id="5fd530ed-228b-4bb7-a2c3-4a8dcdca0f7e" name="Tarih" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="16be9ec8-cab7-4ad4-aa76-fb22101fba35">
+            <field Id="a861617b-a142-449f-86b6-195bb894419a" name="Barkodu" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="47e3b86a-90fd-40a2-8fc3-6779412cba15">
+            <field Id="589c0ecd-538e-4ab8-8d77-6331e50effe5" name="UrunAdi" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="088569a8-5871-46cd-b68e-da59640a0298">
+            <field Id="f858f93b-56a3-4e0d-92c9-cd07b0b194c6" name="Kategori" columnType="UInt64" virtualColumnType="UrunKategori" logicalType="UrunKategori" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="877948d4-65f8-4232-8451-653801ecfbd6">
+            <field Id="5300b4f1-92ec-400f-a45c-6f7f7cdef886" name="Fiyat" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6cb9cfc7-0880-44dc-94f6-790ec2abf1c2">
+            <field Id="74c36edb-6ffe-450b-854a-4e41ba76c1b2" name="KartBilgisi" virtualColumnType="KartBilgileri" logicalType="KartBilgileri" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2a40572a-0c85-424f-b432-ef78649ce128">
+            <field Id="f24e1abd-2bbe-4a1a-9d38-ecfb780924b7" name="iade" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="b82ca728-7586-4361-8d79-f61c99c300ff">
+      <xpObject Id="507760c9-cd38-4767-8ee9-653c9c61eaa6" name="Kasa" baseClass="XPObject" userFileName="Kasa" designerFileName="Kasa.Designer" className="Kasa" virtualName="Kasa">
+        <fields>
+          <generalXpObjectHasFields Id="20c1b35d-9726-47e3-b3df-f17b51d7ac44">
+            <field Id="c74969fa-c02f-46e4-8351-6ae2ac301e92" name="Nakit" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="96a9b992-669d-43b7-b032-890c33c977cb">
+            <field Id="f4037467-fa4b-4e42-adce-16f33a322e47" name="KrediKarti" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="51dc4411-7fc2-4335-bc07-5325f131d97e">
+            <field Id="c54594bc-0e06-46fe-bad1-3893a5eb4dd8" name="Toplam" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="865afbef-e485-4e89-8ecf-1ed7ae8f82c9">
+            <field Id="fb7b1808-b296-4bc3-a15c-1b613ea0dd03" name="KasaAdi" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <aggrTarget>
+          <aggregation Id="2c69219f-3667-46a0-8ab2-2fc55aa67edf" sourceCollectionName="KasaDetays" name="KasaDetayReferencesKasa" targetFieldName="Kasa">
+            <xpObjectMoniker Id="539e1ce8-5d94-4747-a679-f8c8fa7bd04a" />
+          </aggregation>
+        </aggrTarget>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="a9c6d389-8733-476a-a3f6-88a41b8b9a48">
+            <collectionField Id="f7336445-ab78-4592-8c16-8ba2330ae7d9" name="KasaDetays" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="590a65e3-82a3-4ed7-8541-8028d8294a27">
+      <xpObject Id="539e1ce8-5d94-4747-a679-f8c8fa7bd04a" name="KasaDetay" baseClass="XPObject" userFileName="KasaDetay" designerFileName="KasaDetay.Designer" className="KasaDetay" virtualName="KasaDetay">
+        <fields>
+          <generalXpObjectHasFields Id="879398ea-c36d-4aba-baf3-2326ab156c21">
+            <field Id="d6d9abad-844e-4135-b280-b7a525916f82" name="Giseci" virtualColumnType="PermissionPolicyUser" logicalType="PermissionPolicyUser" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1bcc101c-ac6a-4dd7-bf80-fe07da7650cb">
+            <field Id="b430c9bb-7e99-4580-9cf3-1188ca369cad" name="Tarih" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="94fa3cff-dad1-4434-b58c-1a582edb6531">
+            <field Id="4e343a72-db57-4af1-a68a-9cb2ee1d1ae0" name="NakitToplam" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8afcee66-d4e1-42c4-b23c-88d04ca80feb">
+            <field Id="a3854054-facb-4740-8bf5-402cef12bc91" name="KrediKartiToplam" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="afe82019-50c9-449b-a7a1-76531416625b">
+            <field Id="e34a2f6a-25d4-4709-a55b-34543a867256" name="ToplamKazanc" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2471159e-69dc-4c83-b544-00f9bab9d6a2">
+            <field Id="031eb5ea-4ea9-46a4-9a3a-db3b513eee96" name="Kasa" virtualColumnType="Kasa" logicalType="Kasa" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f96c8c7e-7aeb-46ff-ba2b-a35165e10511">
+            <field Id="cb034aea-8112-41d1-94f1-0cec51cfe167" name="TeslimAlinanTutar" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7846901d-332d-4d02-b95e-4a64d693215c">
+            <field Id="e897cc85-9f2c-4943-83e2-182b6771a07b" name="EksikTutar" columnType="Decimal" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f099a430-2e6f-4d86-b7cc-ebecc20a4895">
+            <field Id="eb32853b-a3b4-4f61-a113-1f1ea7cec1fc" name="EksikAciklama" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="57c99633-55a3-4b5b-9b42-9c927750791a">
+            <field Id="e301efac-3f65-4ee8-9641-19da9999db72" name="TeslimAlan" virtualColumnType="PermissionPolicyUser" logicalType="PermissionPolicyUser" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5e3de85b-b59b-4d9d-82d0-c4ba126af7d7">
+            <field Id="68e66ab9-6596-438c-8b7d-05fc84e59203" name="TeslimAlindi" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+  <externalTypes>
+    <dataBaseObjectModelHasExternalTypes Id="54b19435-8ed5-4fcd-9cc4-2609298f7358">
+      <externalType Id="a3ea9910-a18d-4ef9-8a2d-05b52e6264b3" name="PermissionPolicyUser" />
+    </dataBaseObjectModelHasExternalTypes>
+  </externalTypes>
+</dataBaseObjectModel>

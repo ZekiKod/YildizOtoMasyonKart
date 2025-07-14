@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\webaccess\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\webaccess\\webaccess_lib\\webaccessrun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess_lib\\webaccessrun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|c:\\users\\zekikod\\downloads\\panel  (10.9.7)\\sdk\\web\\aspnetcore\\webaccess\\webaccess\\properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\properties\\publishprofiles\\folderprofile.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\webaccess\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\webaccess\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\webaccess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\webaccess\\webaccess.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{06F3775B-0991-42F3-94D7-BEF368C1CCDD}|WebAccess\\WebAccess.csproj|solutionrelative:webaccess\\webaccess.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FolderProfile.pubxml",
+              "DocumentMoniker": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "RelativeDocumentMoniker": "WebAccess\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "ToolTip": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "RelativeToolTip": "WebAccess\\Properties\\PublishProfiles\\FolderProfile.pubxml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-06-16T21:25:17.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WebAccess",
+              "DocumentMoniker": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\WebAccess.csproj",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess.csproj",
+              "ToolTip": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\WebAccess.csproj",
+              "RelativeToolTip": "WebAccess\\WebAccess.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-15T16:18:22.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\Program.cs",
+              "RelativeDocumentMoniker": "WebAccess\\Program.cs",
+              "ToolTip": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\Program.cs",
+              "RelativeToolTip": "WebAccess\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:55:46.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebAccess\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebAccess\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-15T14:23:45.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAccess\\appsettings.json",
+              "ToolTip": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\appsettings.json",
+              "RelativeToolTip": "WebAccess\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-15T14:23:38.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebAccessRun.cs",
+              "DocumentMoniker": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\WebAccess_Lib\\WebAccessRun.cs",
+              "RelativeDocumentMoniker": "WebAccess\\WebAccess_Lib\\WebAccessRun.cs",
+              "ToolTip": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\WebAccess_Lib\\WebAccessRun.cs",
+              "RelativeToolTip": "WebAccess\\WebAccess_Lib\\WebAccessRun.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAYwB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T19:45:43.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebAccess\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ZekiKod\\Downloads\\Panel  (10.9.7)\\SDK\\Web\\AspNetCore\\WebAccess\\WebAccess\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebAccess\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T12:28:56.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

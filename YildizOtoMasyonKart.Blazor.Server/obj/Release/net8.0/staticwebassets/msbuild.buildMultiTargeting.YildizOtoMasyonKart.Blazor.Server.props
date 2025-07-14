@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\YildizOtoMasyonKart.Blazor.Server.props" />
+</Project>
